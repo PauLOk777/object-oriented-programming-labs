@@ -4,6 +4,10 @@ import java.util.Date;
 import java.util.Random;
 
 public class ElectiveService {
+    private static final int numberOfStudents = 5;
+    private static final int maxNumberOfMarks = 10;
+    private static final int maxMark = 12;
+
     public Elective[] getElectives() {
         Elective[] electives = new Elective[DataSource.numberOfElectives()];
         String[] electiveNames = DataSource.getElectiveNames();
@@ -22,8 +26,39 @@ public class ElectiveService {
         return electives;
     }
 
+    public double getAverageMark(Elective[] electives, String electiveName) {
+        Elective searchedElective = null;
+        for (Elective elective: electives) {
+            if (elective.getElectiveName().equals(electiveName)) {
+                searchedElective = elective;
+                break;
+            }
+        }
+
+        if (searchedElective == null) return -1;
+
+        double sum = 0;
+        double[][] marks = searchedElective.getMarks();
+        for (int i = 0; i < numberOfStudents; i++) {
+            for (int j = 0; j < maxNumberOfMarks; j++) {
+                sum += marks[i][j];
+            }
+        }
+
+        return sum / (numberOfStudents * maxNumberOfMarks);
+    }
+
+    public String getElectivesFromOneTeacher(Elective[] electives, String teacher) {
+        StringBuilder searchedElectives = new StringBuilder();
+        for (Elective elective: electives) {
+            if(elective.getTeacherFullName().equals(teacher)) {
+                searchedElectives.append(elective.getElectiveName() + "\n");
+            }
+        }
+        return searchedElectives.toString();
+    }
+
     private String[] getStudents() {
-        final int numberOfStudents = 5;
         String[] uniqueStudents = new String[numberOfStudents];
 
         for (int i = 0; i < numberOfStudents; i++) {
@@ -39,10 +74,6 @@ public class ElectiveService {
     }
 
     private double[][] getMarks() {
-        final int numberOfStudents = 5;
-        final int maxNumberOfMarks = 10;
-        final int maxMark = 12;
-
         return DataSource.getRandomMarks(numberOfStudents, maxNumberOfMarks, maxMark);
     }
 

@@ -62,7 +62,7 @@ public class Elective {
         }
 
         return String.format(
-                "%20s | %30s | %10s | %10s | %s%n",
+                "%20s | %30s | %10s | %10s | %s",
                 electiveName,
                 teacherFullName,
                 startDateStr,
