@@ -47,6 +47,27 @@ public class Elective {
 
     @Override
     public String toString() {
-        return new String();
+        String startDateStr = String.valueOf(this.startDate.getDate()) + '/' +
+                this.startDate.getMonth() + '/' + this.startDate.getYear();
+        String endDateStr = String.valueOf(this.endDate.getDate()) + '/' +
+                this.endDate.getMonth() + '/' + this.endDate.getYear();
+
+        StringBuilder studentsStr = new StringBuilder();
+        for (int i = 0; i < students.length; i++) {
+            if (students.length - i == 1) {
+                studentsStr.append(students[i]);
+            } else {
+                studentsStr.append(students[i] + ", ");
+            }
+        }
+
+        return String.format(
+                "%20s | %30s | %10s | %10s | %s%n",
+                electiveName,
+                teacherFullName,
+                startDateStr,
+                endDateStr,
+                studentsStr.toString()
+        );
     }
 }

@@ -48,6 +48,7 @@ public class ElectiveService {
 
     private boolean isPart(String currentStr, String[] setOfStrings) {
         for (String tempStr: setOfStrings) {
+            if (tempStr == null) continue;
             if (tempStr.equals(currentStr)) {
                 return true;
             }
