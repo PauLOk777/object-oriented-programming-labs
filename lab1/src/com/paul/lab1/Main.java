@@ -1,6 +1,6 @@
-package main.java.com.paul.lab1;
+package com.paul.lab1;
 
-import main.java.com.paul.lab1.controller.Controller;
+import com.paul.lab1.controller.Controller;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package main.java.com.paul.lab1.model;
+package com.paul.lab1.model;
 
 import java.util.Date;
 import java.util.Random;
