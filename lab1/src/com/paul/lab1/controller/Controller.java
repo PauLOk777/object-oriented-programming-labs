@@ -18,38 +18,41 @@ public class Controller {
 
         while (true) {
             menuView.showAbilities();
-            switch (validator.checkCorrectnessMainBranching(retrieveInfo.getUserLine())) {
-                case 1:
-                    while (true) {
-                        menuView.invitationToWriteTeacher();
-                        String data = retrieveInfo.getUserLine();
-                        if (validator.checkTeacher(data)) {
-                            String result = service.getElectivesFromOneTeacher(electives, data);
-                            menuView.showElectives(result);
-                            break;
-                        } else {
-                            menuView.badTeacherName();
+            String data = retrieveInfo.getUserLine();
+            if (validator.checkCorrectnessMainBranching(data)) {
+                switch (data) {
+                    case "1":
+                        while (true) {
+                            menuView.invitationToWriteTeacher();
+                            String info = retrieveInfo.getUserLine();
+                            if (validator.checkTeacher(info)) {
+                                String result = service.getElectivesFromOneTeacher(electives, info);
+                                menuView.showElectives(result);
+                                break;
+                            } else {
+                                menuView.badTeacherName();
+                            }
                         }
-                    }
-                    break;
-                case 2:
-                    menuView.invitationToWriteElective();
-                    String data = retrieveInfo.getUserLine();
-                    if (validator.checkElective(data)) {
-                        double result = service.getAverageMark(electives, data);
-                        menuView.averageMark(data, result);
-                    } else {
-                        menuView.badElectiveName();
-                    }
-                    break;
-                case 3:
-                    menuView.showAllElectives(electives);
-                    break;
-                case 4:
-                    menuView.quit();
-                    return;
-                default:
-                    menuView.badQuery();
+                        break;
+                    case "2":
+                        menuView.invitationToWriteElective();
+                        String info = retrieveInfo.getUserLine();
+                        if (validator.checkElective(info)) {
+                            double result = service.getAverageMark(electives, info);
+                            menuView.averageMark(info, result);
+                        } else {
+                            menuView.badElectiveName();
+                        }
+                        break;
+                    case "3":
+                        menuView.showAllElectives(electives);
+                        break;
+                    case "quit":
+                        menuView.quit();
+                        return;
+                }
+            } else {
+                menuView.badQuery();
             }
         }
     }

@@ -53,11 +53,11 @@ public class MenuView {
     }
 
     public void badTeacherName() {
-        System.out.println("Bad name. Check instruction.");
+        System.out.println("Bad full name. Check instruction.");
     }
 
     public void badElectiveName() {
-        System.out.println("Bad name. Check instruction.");
+        System.out.println("Bad elective name. Check instruction.");
     }
 
     public void badQuery() {
