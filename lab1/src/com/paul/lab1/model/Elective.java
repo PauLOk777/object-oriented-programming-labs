@@ -1,17 +1,17 @@
 package com.paul.lab1.model;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public class Elective {
     private final String electiveName;
     private final String teacherFullName;
-    private final Date startDate;
-    private final Date endDate;
+    private final Calendar startDate;
+    private final Calendar endDate;
     private String[] students;
     private double[][] marks;
 
-    Elective(String electiveName, String teacherFullName, Date startDate,
-             Date endDate, String[] students, double[][] marks) {
+    Elective(String electiveName, String teacherFullName, Calendar startDate,
+             Calendar endDate, String[] students, double[][] marks) {
         this.electiveName = electiveName;
         this.teacherFullName = teacherFullName;
         this.startDate = startDate;
@@ -29,11 +29,11 @@ public class Elective {
         return teacherFullName;
     }
 
-    public Date getStartDate() {
+    public Calendar getStartDate() {
         return startDate;
     }
 
-    public Date getEndDate() {
+    public Calendar getEndDate() {
         return endDate;
     }
 
@@ -47,10 +47,10 @@ public class Elective {
 
     @Override
     public String toString() {
-        String startDateStr = String.valueOf(this.startDate.getDate()) + '/' +
-                this.startDate.getMonth() + '/' + this.startDate.getYear();
-        String endDateStr = String.valueOf(this.endDate.getDate()) + '/' +
-                this.endDate.getMonth() + '/' + this.endDate.getYear();
+        String startDateStr = String.valueOf(this.startDate.get(Calendar.DAY_OF_MONTH)) + '/' +
+                this.startDate.get(Calendar.MONTH) + '/' + this.startDate.get(Calendar.YEAR);
+        String endDateStr = String.valueOf(this.endDate.get(Calendar.DAY_OF_MONTH)) + '/' +
+                this.endDate.get(Calendar.MONTH) + '/' + this.endDate.get(Calendar.YEAR);
 
         StringBuilder studentsStr = new StringBuilder();
         for (int i = 0; i < students.length; i++) {
@@ -61,13 +61,10 @@ public class Elective {
             }
         }
 
-        return String.format(
-                "%20s | %30s | %10s | %10s | %s",
-                electiveName,
-                teacherFullName,
-                startDateStr,
-                endDateStr,
-                studentsStr.toString()
+        return new String(
+                electiveName + "," + teacherFullName + "," +
+                        startDateStr + "," + endDateStr +
+                        "," +studentsStr.toString()
         );
     }
 }

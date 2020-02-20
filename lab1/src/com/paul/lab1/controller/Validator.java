@@ -1,4 +1,4 @@
-package com.paul.lab1.view;
+package com.paul.lab1.controller;
 
 public class Validator {
     public boolean checkCorrectnessMainBranching(String data) {
@@ -15,6 +15,6 @@ public class Validator {
     }
 
     public boolean checkElective(String data) {
-        return data.matches("^[a-zA-Z -0-9]*$");
+        return data.matches("^[a-zA-Z0-9 -]*$");
     }
 }
