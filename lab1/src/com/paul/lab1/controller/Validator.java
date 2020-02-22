@@ -15,6 +15,6 @@ public class Validator {
     }
 
     public boolean checkElective(String data) {
-        return data.matches("^[a-zA-Z0-9 -]*$");
+        return data.matches("^[\\w -]*$");
     }
 }
