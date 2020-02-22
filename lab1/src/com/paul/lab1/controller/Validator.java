@@ -11,10 +11,10 @@ public class Validator {
     }
 
     public boolean checkTeacher(String data) {
-        return data.matches("^[a-zA-Z ]*$");
+        return data.matches("^[A-Z][a-z]+\\s[A-Z][a-z]+\\s[A-Z][a-z]+");
     }
 
     public boolean checkElective(String data) {
-        return data.matches("^[\\w -]*$");
+        return data.matches("^[A-Z][\\w\\s-]*");
     }
 }
