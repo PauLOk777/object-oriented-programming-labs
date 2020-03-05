@@ -2,7 +2,7 @@ package com.paul.lab1.view;
 
 import com.paul.lab1.model.Elective;
 
-public class MenuView {
+public class View {
     public static final String mainMenu = "To select the option, write number of this and press enter:\n" +
             "1. Get a list of electives that " +
             "are taught by the instructor specified.\n"  +

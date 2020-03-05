@@ -9,7 +9,7 @@ public class ElectiveService {
 
     public Elective[] getElectives() { return electives; }
 
-    public double getAverageMark(Elective[] electives, String electiveName) {
+    public double getAverageMark(String electiveName) {
         Elective searchedElective = null;
         for (Elective elective: electives) {
             if (elective.getElectiveName().equals(electiveName)) {
@@ -31,7 +31,7 @@ public class ElectiveService {
         return sum / (DataSource.NUMBER_OF_STUDENTS * DataSource.MAX_NUMBER_OF_MARKS);
     }
 
-    public String getElectivesFromOneTeacher(Elective[] electives, String teacher) {
+    public String getElectivesFromOneTeacher(String teacher) {
         StringBuilder searchedElectives = new StringBuilder();
         for (Elective elective: electives) {
             if(elective.getTeacherFullName().equals(teacher)) {

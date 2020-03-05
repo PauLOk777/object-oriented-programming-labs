@@ -1,19 +1,19 @@
 package com.paul.lab1.controller;
 
 import com.paul.lab1.model.ElectiveService;
-import com.paul.lab1.view.MenuView;
+import com.paul.lab1.view.View;
 import com.paul.lab1.view.RetriveInfo;
 
 
 public class Controller {
-    private static final MenuView menuView = new MenuView();
+    private static final View menuView = new View();
     private static final RetriveInfo retrieveInfo = new RetriveInfo();
     private static final Validator validator = new Validator();
     private static final ElectiveService service = new ElectiveService();
 
     public void run() {
         while (true) {
-            menuView.printOneMessage(MenuView.mainMenu);
+            menuView.printOneMessage(View.mainMenu);
             String data = retrieveInfo.getUserLine();
             if (validator.checkCorrectnessMainBranching(data)) {
                 switch (data) {
@@ -27,43 +27,39 @@ public class Controller {
                         menuView.showAllElectives(service.getElectives());
                         break;
                     case "quit":
-                        menuView.printOneMessage(MenuView.quit);
+                        menuView.printOneMessage(View.quit);
                         return;
                 }
             } else {
-                menuView.printOneMessage(MenuView.badQuery);
+                menuView.printOneMessage(View.badQuery);
             }
         }
     }
 
     private void invitationToWriteTeacher() {
         while (true) {
-            menuView.printOneMessage(MenuView.invitationToWriteTeacher);
-            String info = retrieveInfo.getUserLine();
-            if (validator.checkTeacher(info)) {
-                String result = service.getElectivesFromOneTeacher(
-                        service.getElectives(), info
-                );
+            menuView.printOneMessage(View.invitationToWriteTeacher);
+            String teacher = retrieveInfo.getUserLine();
+            if (validator.checkTeacher(teacher)) {
+                String result = service.getElectivesFromOneTeacher(teacher);
                 menuView.showElectives(result);
                 break;
             } else {
-                menuView.printOneMessage(MenuView.badTeacherName);
+                menuView.printOneMessage(View.badTeacherName);
             }
         }
     }
 
     private void invitationToWriteElective() {
         while (true) {
-            menuView.printOneMessage(MenuView.invitationToWriteElective);
-            String info = retrieveInfo.getUserLine();
-            if (validator.checkElective(info)) {
-                double result = service.getAverageMark(
-                        service.getElectives(), info
-                );
-                menuView.averageMark(info, result);
+            menuView.printOneMessage(View.invitationToWriteElective);
+            String elective = retrieveInfo.getUserLine();
+            if (validator.checkElective(elective)) {
+                double result = service.getAverageMark(elective);
+                menuView.averageMark(elective, result);
                 break;
             } else {
-                menuView.printOneMessage(MenuView.badElectiveName);
+                menuView.printOneMessage(View.badElectiveName);
             }
         }
     }
