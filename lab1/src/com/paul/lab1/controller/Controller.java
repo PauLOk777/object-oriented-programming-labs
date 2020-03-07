@@ -13,7 +13,7 @@ public class Controller {
 
     public void run() {
         while (true) {
-            menuView.printOneMessage(View.mainMenu);
+            menuView.printOneMessage(View.MAIN_MENU);
             String data = retrieveInfo.getUserLine();
             if (validator.checkCorrectnessMainBranching(data)) {
                 switch (data) {
@@ -27,39 +27,39 @@ public class Controller {
                         menuView.showAllElectives(service.getElectives());
                         break;
                     case "quit":
-                        menuView.printOneMessage(View.quit);
+                        menuView.printOneMessage(View.QUIT);
                         return;
                 }
             } else {
-                menuView.printOneMessage(View.badQuery);
+                menuView.printOneMessage(View.BAD_QUERY);
             }
         }
     }
 
     private void invitationToWriteTeacher() {
         while (true) {
-            menuView.printOneMessage(View.invitationToWriteTeacher);
+            menuView.printOneMessage(View.INVITATION_TO_WRITE_TEACHER);
             String teacher = retrieveInfo.getUserLine();
             if (validator.checkTeacher(teacher)) {
                 String result = service.getElectivesFromOneTeacher(teacher);
                 menuView.showElectives(result);
                 break;
             } else {
-                menuView.printOneMessage(View.badTeacherName);
+                menuView.printOneMessage(View.BAD_TEACHER_NAME);
             }
         }
     }
 
     private void invitationToWriteElective() {
         while (true) {
-            menuView.printOneMessage(View.invitationToWriteElective);
+            menuView.printOneMessage(View.INVITATION_TO_WRITE_ELECTIVE);
             String elective = retrieveInfo.getUserLine();
             if (validator.checkElective(elective)) {
                 double result = service.getAverageMark(elective);
                 menuView.averageMark(elective, result);
                 break;
             } else {
-                menuView.printOneMessage(View.badElectiveName);
+                menuView.printOneMessage(View.BAD_ELECTIVE_NAME);
             }
         }
     }

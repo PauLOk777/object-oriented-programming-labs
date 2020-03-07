@@ -3,21 +3,21 @@ package com.paul.lab1.view;
 import com.paul.lab1.model.Elective;
 
 public class View {
-    public static final String mainMenu = "To select the option, write number of this and press enter:\n" +
+    public static final String MAIN_MENU = "To select the option, write number of this and press enter:\n" +
             "1. Get a list of electives that " +
             "are taught by the instructor specified.\n"  +
             "2. Get an average student score " +
             "for the specified elective.\n" +
             "3. Get all electives.\n" +
             "If you want to exit from this app, write \"quit\".";
-    public static final String invitationToWriteTeacher = "Write full name of teacher. " +
+    public static final String INVITATION_TO_WRITE_TEACHER = "Write full name of teacher. " +
             "For example: \"Ivanov Ivan Ivanovich\".";
-    public static final String invitationToWriteElective = "Write name of elective." +
+    public static final String INVITATION_TO_WRITE_ELECTIVE = "Write name of elective." +
             " For example: \"Ukrainian language\".";
-    public static final String badTeacherName = "Bad full name. Check instruction.";
-    public static final String badElectiveName = "Bad elective name. Check instruction.";
-    public static final String badQuery = "Bad query, please read instruction again and choose correct variant.\n\n";
-    public static final String quit = "Goodbye!";
+    public static final String BAD_TEACHER_NAME = "Bad full name. Check instruction.";
+    public static final String BAD_ELECTIVE_NAME = "Bad elective name. Check instruction.";
+    public static final String BAD_QUERY = "Bad query, please read instruction again and choose correct variant.\n\n";
+    public static final String QUIT = "Goodbye!";
 
     public void printOneMessage(String data) {
         System.out.println(data);
