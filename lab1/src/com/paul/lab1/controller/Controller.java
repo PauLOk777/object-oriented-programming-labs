@@ -1,5 +1,8 @@
 package com.paul.lab1.controller;
 
+import com.paul.lab1.controller.validatorExceptions.IncorrectlyElective;
+import com.paul.lab1.controller.validatorExceptions.IncorrectlyMainBranching;
+import com.paul.lab1.controller.validatorExceptions.IncorrectlyTeacher;
 import com.paul.lab1.model.ElectiveService;
 import com.paul.lab1.view.View;
 import com.paul.lab1.view.RetriveInfo;
@@ -15,7 +18,8 @@ public class Controller {
         while (true) {
             menuView.printOneMessage(View.MAIN_MENU);
             String data = retrieveInfo.getUserLine();
-            if (validator.checkCorrectnessMainBranching(data)) {
+            try {
+                validator.checkCorrectnessMainBranching(data);
                 switch (data) {
                     case "1":
                         this.invitationToWriteTeacher();
@@ -30,8 +34,8 @@ public class Controller {
                         menuView.printOneMessage(View.QUIT);
                         return;
                 }
-            } else {
-                menuView.printOneMessage(View.BAD_QUERY);
+            } catch (IncorrectlyMainBranching incorrectlyMainBranching){
+                menuView.printOneMessage(incorrectlyMainBranching.getMessage());
             }
         }
     }
@@ -40,12 +44,13 @@ public class Controller {
         while (true) {
             menuView.printOneMessage(View.INVITATION_TO_WRITE_TEACHER);
             String teacher = retrieveInfo.getUserLine();
-            if (validator.checkTeacher(teacher)) {
+            try {
+                validator.checkTeacher(teacher);
                 String result = service.getElectivesFromOneTeacher(teacher);
                 menuView.showElectives(result);
                 break;
-            } else {
-                menuView.printOneMessage(View.BAD_TEACHER_NAME);
+            } catch (IncorrectlyTeacher incorrectlyTeacher) {
+                menuView.printOneMessage(incorrectlyTeacher.getMessage());
             }
         }
     }
@@ -54,12 +59,13 @@ public class Controller {
         while (true) {
             menuView.printOneMessage(View.INVITATION_TO_WRITE_ELECTIVE);
             String elective = retrieveInfo.getUserLine();
-            if (validator.checkElective(elective)) {
+            try {
+                validator.checkElective(elective);
                 double result = service.getAverageMark(elective);
                 menuView.averageMark(elective, result);
                 break;
-            } else {
-                menuView.printOneMessage(View.BAD_ELECTIVE_NAME);
+            } catch (IncorrectlyElective incorrectlyElective){
+                menuView.printOneMessage(incorrectlyElective.getMessage());
             }
         }
     }
