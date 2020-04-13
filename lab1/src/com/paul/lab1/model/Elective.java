@@ -21,27 +21,27 @@ public class Elective {
     }
 
 
-    public String getElectiveName() {
+    String getElectiveName() {
         return electiveName;
     }
 
-    public String getTeacherFullName() {
+    String getTeacherFullName() {
         return teacherFullName;
     }
 
-    public Calendar getStartDate() {
+    Calendar getStartDate() {
         return startDate;
     }
 
-    public Calendar getEndDate() {
+    Calendar getEndDate() {
         return endDate;
     }
 
-    public String[] getStudents() {
+    String[] getStudents() {
         return students;
     }
 
-    public double[][] getMarks() {
+    double[][] getMarks() {
         return marks;
     }
 
@@ -57,7 +57,7 @@ public class Elective {
             if (students.length - i == 1) {
                 studentsStr.append(students[i]);
             } else {
-                studentsStr.append(students[i] + ", ");
+                studentsStr.append(students[i]).append(", ");
             }
         }
 

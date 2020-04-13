@@ -10,8 +10,7 @@ class Validator {
     private static final String BAD_QUERY = "Bad query, please read instruction again and choose correct variant.\n\n";
 
     void checkCorrectnessMainBranching(String data) {
-        if (!(data.equals("1") || data.equals("2")
-        || data.equals("3") || data.equals("quit"))) {
+        if (!data.matches("[1-3]|quit")) {
             throw new IncorrectlyMainBranching(BAD_QUERY);
         }
     }
