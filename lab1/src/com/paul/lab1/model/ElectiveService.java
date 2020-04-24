@@ -1,13 +1,21 @@
 package com.paul.lab1.model;
 
+import java.io.IOException;
+
 public class ElectiveService {
     private Elective[] electives;
+    private final static String PATH = "C:\\projects\\object-oriented-programming-labs\\lab1\\data.json";
 
-    public ElectiveService() {
-        electives = DataSource.getNewElectives();
+    public ElectiveService() throws IOException {
+//        electives = DataSource.getNewElectives();
+        electives = FileIO.readElectivesJSON(PATH);
     }
 
     public Elective[] getElectives() { return electives; }
+
+    public void fillJSONFile() throws IOException {
+        FileIO.writeBooksToFile(electives, PATH);
+    }
 
     public double getAverageMark(String electiveName) {
         Elective searchedElective = null;
@@ -22,20 +30,20 @@ public class ElectiveService {
 
         double sum = 0;
         double[][] marks = searchedElective.getMarks();
-        for (int i = 0; i < DataSource.NUMBER_OF_STUDENTS; i++) {
-            for (int j = 0; j < DataSource.MAX_NUMBER_OF_MARKS; j++) {
-                sum += marks[i][j];
+        for (double[] markElective : marks) {
+            for (double note : markElective) {
+                sum += note;
             }
         }
 
-        return sum / (DataSource.NUMBER_OF_STUDENTS * DataSource.MAX_NUMBER_OF_MARKS);
+        return sum / (marks.length * marks[0].length);
     }
 
     public String getElectivesFromOneTeacher(String teacher) {
         StringBuilder searchedElectives = new StringBuilder();
         for (Elective elective: electives) {
             if(elective.getTeacherFullName().equals(teacher)) {
-                searchedElectives.append(elective.getElectiveName() + "\n");
+                searchedElectives.append(elective.getElectiveName()).append("\n");
             }
         }
         return searchedElectives.toString();

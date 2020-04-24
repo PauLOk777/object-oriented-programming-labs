@@ -7,16 +7,30 @@ import com.paul.lab1.model.ElectiveService;
 import com.paul.lab1.view.View;
 import com.paul.lab1.view.RetriveInfo;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 
 public class Controller {
-    private static final View menuView = new View();
-    private static final RetriveInfo retrieveInfo = new RetriveInfo();
-    private static final Validator validator = new Validator();
-    private static final ElectiveService service = new ElectiveService();
+    private static View view = new View();
+    private static RetriveInfo retrieveInfo = new RetriveInfo();
+    private static Validator validator = new Validator();
+    private static ElectiveService service;
 
     public void run() {
+        try {
+            service = new ElectiveService();
+//            service.fillJSONFile();
+        } catch (FileNotFoundException e) {
+            view.printOneMessage("File not found\n" + e.getMessage());
+            return;
+        } catch (IOException e) {
+            view.printOneMessage("Some problems with reading file\n" + e.getMessage());
+            return;
+        }
+
         while (true) {
-            menuView.printOneMessage(View.MAIN_MENU);
+            view.printOneMessage(View.MAIN_MENU);
             String data = retrieveInfo.getUserLine();
             try {
                 validator.checkCorrectnessMainBranching(data);
@@ -28,44 +42,44 @@ public class Controller {
                         this.invitationToWriteElective();
                         break;
                     case "3":
-                        menuView.showAllElectives(service.getElectives());
+                        view.showAllElectives(service.getElectives());
                         break;
                     case "quit":
-                        menuView.printOneMessage(View.QUIT);
+                        view.printOneMessage(View.QUIT);
                         return;
                 }
             } catch (IncorrectlyMainBranching incorrectlyMainBranching){
-                menuView.printOneMessage(incorrectlyMainBranching.getMessage());
+                view.printOneMessage(incorrectlyMainBranching.getMessage());
             }
         }
     }
 
     private void invitationToWriteTeacher() {
         while (true) {
-            menuView.printOneMessage(View.INVITATION_TO_WRITE_TEACHER);
+            view.printOneMessage(View.INVITATION_TO_WRITE_TEACHER);
             String teacher = retrieveInfo.getUserLine();
             try {
                 validator.checkTeacher(teacher);
                 String result = service.getElectivesFromOneTeacher(teacher);
-                menuView.showElectives(result);
+                view.showElectives(result);
                 break;
             } catch (IncorrectlyTeacher incorrectlyTeacher) {
-                menuView.printOneMessage(incorrectlyTeacher.getMessage());
+                view.printOneMessage(incorrectlyTeacher.getMessage());
             }
         }
     }
 
     private void invitationToWriteElective() {
         while (true) {
-            menuView.printOneMessage(View.INVITATION_TO_WRITE_ELECTIVE);
+            view.printOneMessage(View.INVITATION_TO_WRITE_ELECTIVE);
             String elective = retrieveInfo.getUserLine();
             try {
                 validator.checkElective(elective);
                 double result = service.getAverageMark(elective);
-                menuView.averageMark(elective, result);
+                view.averageMark(elective, result);
                 break;
             } catch (IncorrectlyElective incorrectlyElective){
-                menuView.printOneMessage(incorrectlyElective.getMessage());
+                view.printOneMessage(incorrectlyElective.getMessage());
             }
         }
     }

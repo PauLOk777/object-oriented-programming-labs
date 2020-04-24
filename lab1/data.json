@@ -1,0 +1,142 @@
+[
+  {
+    "electiveName": "Physics",
+    "teacherFullName": "Zaharko Mykola Mykolaevich",
+    "startDate": {"year":2019,"month":9,"dayOfMonth":5,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":4,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Filatov Oleksandr","Myronyuk Pavlo","Chugay Vladislava","Chuy Oleg","Sharikov Sergiy"],
+    "marks": [
+      [6.0,2.0,7.0,9.0,5.0,12.0,7.0,2.0,10.0,2.0],
+      [4.0,6.0,9.0,11.0,11.0,8.0,7.0,12.0,11.0,6.0],
+      [5.0,1.0,2.0,3.0,6.0,9.0,2.0,1.0,4.0,6.0],
+      [13.0,6.0,4.0,8.0,1.0,11.0,9.0,10.0,9.0,10.0],
+      [2.0,5.0,4.0,3.0,10.0,12.0,7.0,6.0,2.0,6.0]
+    ]
+  },
+  {
+    "electiveName": "Math",
+    "teacherFullName": "Ivanov Ivan Ivanovich",
+    "startDate": {"year":2019,"month":8,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":4,"dayOfMonth":25,"hourOfDay":0,"minute":0,"second":0},
+    "students":["Pavlyuk Olena","Knysh Vladislav","Sharikov Sergiy","Chugay Vladislava","Trotsiuk Pavlo"],
+    "marks": [
+      [7.0,11.0,3.0,11.0,9.0,5.0,10.0,4.0,3.0,1.0],
+      [12.0,3.0,9.0,1.0,4.0,6.0,12.0,4.0,5.0,4.0],
+      [2.0,11.0,11.0,7.0,2.0,6.0,8.0,12.0,6.0,8.0],
+      [11.0,2.0,3.0,2.0,1.0,3.0,2.0,2.0,7.0,8.0],
+      [1.0,6.0,1.0,10.0,9.0,2.0,11.0,6.0,12.0,12.0]
+    ]
+  },
+  {
+    "electiveName": "Computer Science",
+    "teacherFullName": "Zaharko Mykola Mykolaevich",
+    "startDate": {"year":2019,"month":9,"dayOfMonth":5,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":4,"dayOfMonth":25,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Kemarskiy Mykyta","Galun Anna","Panasyuk Vitaliy","Filatov Oleksandr","Verko Olga"],
+    "marks": [
+      [2.0,1.0,10.0,11.0,2.0,1.0,9.0,2.0,3.0,7.0],
+      [10.0,8.0,6.0,3.0,8.0,5.0,12.0,3.0,11.0,7.0],
+      [9.0,6.0,10.0,7.0,10.0,11.0,3.0,9.0,7.0,5.0],
+      [1.0,10.0,12.0,12.0,5.0,1.0,9.0,5.0,6.0,9.0],
+      [9.0,11.0,7.0,10.0,6.0,8.0,4.0,4.0,2.0,2.0]
+    ]
+  },
+  {
+    "electiveName": "Chemistry",
+    "teacherFullName": "Ivanov Ivan Ivanovich",
+    "startDate": {"year":2019,"month":8,"dayOfMonth":15,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":5,"dayOfMonth":5,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Verko Olga","Chuy Oleg","Pavlyuk Olena","Filatov Oleksandr","Trotsiuk Pavlo"],
+    "marks": [
+      [11.0,5.0,10.0,8.0,9.0,12.0,11.0,2.0,11.0,7.0],
+      [4.0,7.0,2.0,10.0,10.0,12.0,12.0,4.0,12.0,10.0],
+      [2.0,5.0,5.0,2.0,11.0,5.0,7.0,6.0,4.0,11.0],
+      [3.0,10.0,2.0,8.0,7.0,6.0,2.0,9.0,9.0,2.0],
+      [3.0,5.0,10.0,12.0,6.0,11.0,11.0,6.0,4.0,9.0]
+    ]
+  },
+  {
+    "electiveName": "Biology",
+    "teacherFullName": "Guzenko Oleksandr Viktorovich",
+    "startDate": {"year":2019,"month":8,"dayOfMonth":15,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":5,"dayOfMonth":5,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Myronyuk Pavlo","Panasyuk Vitaliy","Verko Olga","Sharikov Sergiy","Chugay Vladislava"],
+    "marks": [
+      [2.0,5.0,9.0,5.0,8.0,1.0,10.0,9.0,10.0,12.0],
+      [5.0,5.0,12.0,11.0,3.0,7.0,10.0,8.0,10.0,3.0],
+      [9.0,5.0,11.0,3.0,11.0,9.0,5.0,11.0,10.0,2.0],
+      [12.0,4.0,9.0,7.0,2.0,8.0,6.0,11.0,2.0,6.0],
+      [7.0,12.0,12.0,8.0,12.0,5.0,10.0,12.0,4.0,12.0]
+    ]
+  },
+  {
+    "electiveName": "Ukrainian language",
+    "teacherFullName": "Soroka Evgen Sergiyovich",
+    "startDate": {"year":2019,"month":8,"dayOfMonth":15,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":5,"dayOfMonth":5,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Kemarskiy Mykyta","Trotsiuk Pavlo","Knysh Vladislav","Verko Olga","Chugay Vladislava"],
+    "marks": [
+      [9.0,3.0,3.0,12.0,7.0,12.0,4.0,1.0,8.0,5.0],
+      [10.0,3.0,11.0,6.0,6.0,1.0,2.0,8.0,3.0,1.0],
+      [3.0,10.0,10.0,3.0,10.0,12.0,6.0,4.0,9.0,4.0],
+      [7.0,12.0,2.0,12.0,11.0,12.0,5.0,6.0,5.0,7.0],
+      [1.0,5.0,9.0,1.0,0.0,12.0,9.0,11.0,4.0,6.0]
+    ]
+  },
+  {
+    "electiveName": "Ukrainian literature",
+    "teacherFullName": "Soroka Evgen Sergiyovich",
+    "startDate": {"year":2019,"month":8,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":5,"dayOfMonth":5,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Panasyuk Vitaliy","Sharikov Sergiy","Pavlyuk Olena","Knysh Vladislav","Galun Anna"],
+    "marks": [
+      [4.0,11.0,9.0,9.0,11.0,4.0,12.0,6.0,2.0,4.0],
+      [10.0,3.0,2.0,8.0,6.0,3.0,11.0,4.0,2.0,8.0],
+      [4.0,8.0,12.0,1.0,3.0,1.0,8.0,12.0,9.0,9.0],
+      [3.0,11.0,11.0,9.0,8.0,4.0,8.0,3.0,11.0,6.0],
+      [6.0,10.0,7.0,10.0,1.0,2.0,9.0,5.0,1.0,10.0]
+    ]
+  },
+  {
+    "electiveName": "Ecology",
+    "teacherFullName": "Guzenko Oleksandr Viktorovich",
+    "startDate": {"year":2019,"month":8,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":4,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Krasnovil Oleg","Knysh Vladislav","Sharikov Sergiy","Kemarskiy Mykyta","Verko Olga"],
+    "marks": [
+      [3.0,7.0,9.0,8.0,6.0,6.0,9.0,11.0,12.0,8.0],
+      [11.0,8.0,9.0,9.0,9.0,9.0,5.0,11.0,12.0,11.0],
+      [7.0,9.0,6.0,1.0,10.0,10.0,2.0,7.0,5.0,4.0],
+      [7.0,12.0,6.0,11.0,10.0,2.0,4.0,10.0,5.0,1.0],
+      [12.0,8.0,7.0,11.0,7.0,4.0,11.0,10.0,11.0,3.0]
+    ]
+  },
+  {
+    "electiveName": "Economy",
+    "teacherFullName": "Soroka Evgen Sergiyovich",
+    "startDate": {"year":2019,"month":9,"dayOfMonth":5,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":4,"dayOfMonth":25,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Chugay Vladislava","Knysh Vladislav","Pavlyuk Olena","Kemarskiy Mykyta","Krasnovil Oleg"],
+    "marks": [
+      [11.0,1.0,5.0,2.0,9.0,5.0,10.0,4.0,11.0,10.0],
+      [2.0,10.0,1.0,12.0,1.0,12.0,12.0,6.0,8.0,10.0],
+      [9.0,1.0,9.0,8.0,3.0,12.0,4.0,4.0,8.0,6.0],
+      [2.0,6.0,8.0,12.0,3.0,12.0,10.0,8.0,11.0,3.0],
+      [4.0,12.0,6.0,4.0,9.0,1.0,1.0,2.0,11.0,7.0]
+    ]
+  },
+  {
+    "electiveName": "Astronomy",
+    "teacherFullName": "Guzenko Oleksandr Viktorovich",
+    "startDate": {"year":2019,"month":8,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0},
+    "endDate": {"year":2020,"month":4,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0},
+    "students": ["Kemarskiy Mykyta","Sharikov Sergiy","Verko Olga","Myronyuk Pavlo","Pavlyuk Olena"],
+    "marks": [
+      [6.0,7.0,11.0,2.0,9.0,11.0,6.0,11.0,7.0,9.0],
+      [4.0,11.0,3.0,4.0,9.0,11.0,2.0,7.0,12.0,6.0],
+      [8.0,6.0,5.0,4.0,10.0,5.0,4.0,4.0,10.0,5.0],
+      [3.0,11.0,11.0,1.0,6.0,4.0,2.0,7.0,8.0,1.0],
+      [5.0,1.0,9.0,4.0,1.0,6.0,5.0,2.0,4.0,11.0]
+    ]
+  }
+]
