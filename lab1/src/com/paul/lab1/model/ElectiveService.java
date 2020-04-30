@@ -5,6 +5,7 @@ import java.io.IOException;
 public class ElectiveService {
     private Elective[] electives;
     private final static String PATH = "C:\\projects\\object-oriented-programming-labs\\lab1\\data.json";
+    private final static String PATH_ELECTIVES = "C:\\projects\\object-oriented-programming-labs\\lab1\\electives.txt";
 
     public ElectiveService() throws IOException {
 //        electives = DataSource.getNewElectives();
@@ -13,8 +14,8 @@ public class ElectiveService {
 
     public Elective[] getElectives() { return electives; }
 
-    public void fillJSONFile() throws IOException {
-        FileIO.writeBooksToFile(electives, PATH);
+    public void writeTextElectives(String electives) throws IOException {
+        FileIO.writeElectivesToTXT(electives, PATH_ELECTIVES);
     }
 
     public double getAverageMark(String electiveName) {

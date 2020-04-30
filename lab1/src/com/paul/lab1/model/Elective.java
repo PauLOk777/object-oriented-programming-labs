@@ -10,7 +10,7 @@ public class Elective {
     private String[] students;
     private double[][] marks;
 
-    public Elective(String electiveName, String teacherFullName, Calendar startDate,
+    Elective(String electiveName, String teacherFullName, Calendar startDate,
              Calendar endDate, String[] students, double[][] marks) {
         this.electiveName = electiveName;
         this.teacherFullName = teacherFullName;

@@ -22,11 +22,9 @@ class FileIO {
         return gson.fromJson(electivesStr.toString(), Elective[].class);
     }
 
-    static void writeBooksToFile (Elective[] electives, String filePath) throws IOException {
-        Gson gson = new Gson();
+    static void writeElectivesToTXT(String electives, String filePath) throws IOException {
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
-        String electivesStr = gson.toJson(electives);
-        bos.write(electivesStr.getBytes());
+        bos.write(electives.getBytes());
         bos.close();
     }
 }

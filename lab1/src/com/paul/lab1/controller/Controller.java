@@ -5,7 +5,7 @@ import com.paul.lab1.controller.validatorExceptions.IncorrectlyMainBranching;
 import com.paul.lab1.controller.validatorExceptions.IncorrectlyTeacher;
 import com.paul.lab1.model.ElectiveService;
 import com.paul.lab1.view.View;
-import com.paul.lab1.view.RetriveInfo;
+import com.paul.lab1.view.RetrieveInfo;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,21 +13,12 @@ import java.io.IOException;
 
 public class Controller {
     private static View view = new View();
-    private static RetriveInfo retrieveInfo = new RetriveInfo();
+    private static RetrieveInfo retrieveInfo = new RetrieveInfo();
     private static Validator validator = new Validator();
     private static ElectiveService service;
 
     public void run() {
-        try {
-            service = new ElectiveService();
-//            service.fillJSONFile();
-        } catch (FileNotFoundException e) {
-            view.printOneMessage("File not found\n" + e.getMessage());
-            return;
-        } catch (IOException e) {
-            view.printOneMessage("Some problems with reading file\n" + e.getMessage());
-            return;
-        }
+        if (!this.readElectives()) return;
 
         while (true) {
             view.printOneMessage(View.MAIN_MENU);
@@ -54,6 +45,20 @@ public class Controller {
         }
     }
 
+    private boolean readElectives() {
+        try {
+            service = new ElectiveService();
+//            service.fillJSONFile();
+            return true;
+        } catch (FileNotFoundException e) {
+            view.printOneMessage(View.FILE_NOT_FOUND);
+            return false;
+        } catch (IOException e) {
+            view.printOneMessage(View.FILE_EXCEPTION);
+            return false;
+        }
+    }
+
     private void invitationToWriteTeacher() {
         while (true) {
             view.printOneMessage(View.INVITATION_TO_WRITE_TEACHER);
@@ -62,9 +67,25 @@ public class Controller {
                 validator.checkTeacher(teacher);
                 String result = service.getElectivesFromOneTeacher(teacher);
                 view.showElectives(result);
+                this.invitationToSaveElectives(result);
                 break;
             } catch (IncorrectlyTeacher incorrectlyTeacher) {
                 view.printOneMessage(incorrectlyTeacher.getMessage());
+            }
+        }
+    }
+
+    private void invitationToSaveElectives(String electives) {
+        view.printOneMessage(View.INVITATION_TO_RECORD_IN_FILE);
+        String option = retrieveInfo.getUserLine();
+        if (option.equals("1")) {
+            try {
+                service.writeTextElectives(electives);
+                view.printOneMessage(View.SUCCESSFUL_SAVE);
+            } catch (FileNotFoundException e) {
+                view.printOneMessage(View.FILE_NOT_FOUND);
+            } catch (IOException e) {
+                view.printOneMessage(View.FILE_EXCEPTION);
             }
         }
     }
