@@ -1,0 +1,33 @@
+[DEBUG] 2020-05-12 21:46:33.361 Controller - Electives was defined successful.
+[DEBUG] 2020-05-12 21:46:39.211 RetrieveInfo - User input: gev
+[ERROR] 2020-05-12 21:46:39.212 Controller - Bad query, please read instruction again and choose correct variant.
+
+
+[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:30), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-12 21:46:41.211 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-12 21:46:41.212 Controller - User get invitation to write teacher.
+[DEBUG] 2020-05-12 21:46:55.216 RetrieveInfo - User input: 1
+[ERROR] 2020-05-12 21:46:55.218 Controller - Bad full name. Check instruction.
+[com.paul.lab1.controller.Validator.checkTeacher(Validator.java:20), com.paul.lab1.controller.Controller.invitationToWriteTeacher(Controller.java:78), com.paul.lab1.controller.Controller.run(Controller.java:34), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-12 21:47:01.219 RetrieveInfo - User input: Ivanov Ivan Ivanovich
+[DEBUG] 2020-05-12 21:47:01.220 ElectiveService - 
+Math
+Chemistry
+
+[DEBUG] 2020-05-12 21:47:07.222 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-12 21:47:07.225 Controller - File was saved successfully
+[DEBUG] 2020-05-12 21:47:25.232 RetrieveInfo - User input: 2
+[DEBUG] 2020-05-12 21:47:25.232 Controller - User get invitation to write elective.
+[DEBUG] 2020-05-12 21:47:31.236 RetrieveInfo - User input: l;gmg
+[ERROR] 2020-05-12 21:47:31.237 Controller - Bad elective name. Check instruction.
+[com.paul.lab1.controller.Validator.checkElective(Validator.java:25), com.paul.lab1.controller.Controller.invitationToWriteElective(Controller.java:114), com.paul.lab1.controller.Controller.run(Controller.java:38), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-12 21:47:41.239 RetrieveInfo - User input: Ukrainian
+[ERROR] 2020-05-12 21:47:41.240 ElectiveService - No such electives.
+[DEBUG] 2020-05-12 21:47:46.242 RetrieveInfo - User input: 2
+[DEBUG] 2020-05-12 21:47:46.243 Controller - User get invitation to write elective.
+[DEBUG] 2020-05-12 21:48:04.251 RetrieveInfo - User input: Ukrainian language
+[DEBUG] 2020-05-12 21:48:04.255 ElectiveService - Average mark in Ukrainian language: 6.46
+[DEBUG] 2020-05-12 21:48:10.253 RetrieveInfo - User input: 3
+[DEBUG] 2020-05-12 21:48:10.254 Controller - User get all electives.
+[DEBUG] 2020-05-12 21:48:13.254 RetrieveInfo - User input: quit
+[DEBUG] 2020-05-12 21:48:13.255 Controller - User exit from application.
