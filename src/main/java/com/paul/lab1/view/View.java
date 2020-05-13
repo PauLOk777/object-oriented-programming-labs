@@ -37,9 +37,9 @@ public class View {
     public void printOneMessage(String data) {
         byte[] bytes = resourceBundle.getString(data).getBytes();
 
-        for (byte character: bytes) System.out.println(character);
+        // for (byte character: bytes) System.out.println(character);
 
-        System.out.println();
+        System.out.println(resourceBundle.getString(data));
     }
 
     public void showAllElectives(String[] electives) {
