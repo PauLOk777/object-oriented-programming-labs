@@ -1,0 +1,51 @@
+[DEBUG] 2020-05-13 15:56:43.698 Controller - Electives was defined successful.
+[DEBUG] 2020-05-13 18:58:44.913 Controller - Electives was defined successful.
+[DEBUG] 2020-05-13 18:59:08.590 Controller - Electives was defined successful.
+[DEBUG] 2020-05-13 18:59:18.745 Controller - Electives was defined successful.
+[DEBUG] 2020-05-13 18:59:22.635 RetrieveInfo - User input: 3
+[DEBUG] 2020-05-13 18:59:36.641 RetrieveInfo - User input: 3
+[DEBUG] 2020-05-13 18:59:36.641 Controller - User get all electives.
+[DEBUG] 2020-05-13 18:59:36.644 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
+[DEBUG] 2020-05-13 18:59:36.644 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
+[DEBUG] 2020-05-13 18:59:36.645 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
+[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
+[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
+[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
+[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
+[DEBUG] 2020-05-13 18:59:36.647 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
+[DEBUG] 2020-05-13 18:59:36.647 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
+[DEBUG] 2020-05-13 18:59:36.647 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
+[DEBUG] 2020-05-13 18:59:40.641 RetrieveInfo - User input: 2
+[DEBUG] 2020-05-13 18:59:40.642 Controller - User get invitation to write elective.
+[DEBUG] 2020-05-13 18:59:46.644 RetrieveInfo - User input: Ukrainian language
+[DEBUG] 2020-05-13 18:59:46.650 ElectiveService - Average mark in Ukrainian language: 6.46
+[DEBUG] 2020-05-13 18:59:53.647 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-13 18:59:53.647 Controller - User get invitation to write teacher.
+[DEBUG] 2020-05-13 18:59:57.648 RetrieveInfo - User input: Ivanov Ivan Ivanovich
+[DEBUG] 2020-05-13 18:59:57.649 ElectiveService - 
+Math
+Chemistry
+
+[DEBUG] 2020-05-13 19:00:05.653 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-13 19:00:05.656 Controller - File was saved successfully
+[DEBUG] 2020-05-13 19:00:06.654 RetrieveInfo - User input: 
+[ERROR] 2020-05-13 19:00:06.655 Controller - Bad query, please read instruction again and choose correct variant.
+
+
+[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:37), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-13 19:00:11.656 RetrieveInfo - User input: quit
+[DEBUG] 2020-05-13 19:00:11.657 Controller - User exit from application.
+[DEBUG] 2020-05-13 19:03:45.817 Controller - Electives was defined successful.
+[DEBUG] 2020-05-13 19:03:48.795 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-13 19:03:52.796 RetrieveInfo - User input: 3
+[DEBUG] 2020-05-13 19:03:52.797 Controller - User get all electives.
+[DEBUG] 2020-05-13 19:03:52.800 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
+[DEBUG] 2020-05-13 19:03:52.800 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
+[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
+[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
+[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
+[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
+[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
+[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
+[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
+[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena

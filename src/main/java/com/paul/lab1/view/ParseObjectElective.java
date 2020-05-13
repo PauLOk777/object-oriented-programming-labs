@@ -1,8 +1,8 @@
 package com.paul.lab1.view;
 
-public class ParseObjectElective {
-    public static final String FORMAT = "%20s | %30s | %10s | %10s | %s\n";
-    public static final String parseToString(String data) {
+class ParseObjectElective {
+    static final String FORMAT = "%20s | %30s | %10s | %10s | %s\n";
+    static String parseToString(String data) {
         String[] parsedInfo = data.split(",", 5);
         return String.format(
                 FORMAT, parsedInfo[0], parsedInfo[1],

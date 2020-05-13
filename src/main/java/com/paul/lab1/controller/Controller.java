@@ -4,14 +4,15 @@ import com.paul.lab1.controller.validatorExceptions.IncorrectlyElective;
 import com.paul.lab1.controller.validatorExceptions.IncorrectlyMainBranching;
 import com.paul.lab1.controller.validatorExceptions.IncorrectlyTeacher;
 import com.paul.lab1.model.ElectiveService;
-import com.paul.lab1.view.RetrieveInfo;
-import com.paul.lab1.view.View;
+import com.paul.lab1.view.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class Controller {
     private static View view = new View();
@@ -19,9 +20,15 @@ public class Controller {
     private static Validator validator = new Validator();
     private static ElectiveService service;
     private static Logger logger = LogManager.getLogger();
+    private static Locale locale = Locale.getDefault();
+    private static ResourceBundle resourceBundle = ResourceBundle.getBundle("text", locale);
 
     public void run() {
         if (!this.readElectives()) return;
+
+        view.printOneMessage(View.LANG_MENU);
+        String langChoice = retrieveInfo.getUserLine();
+        this.languageChoice(langChoice);
 
         while (true) {
             view.printOneMessage(View.MAIN_MENU);
@@ -49,8 +56,24 @@ public class Controller {
             } catch (IncorrectlyMainBranching incorrectlyMainBranching) {
                 logger.error(incorrectlyMainBranching.getMessage() + "\n" +
                         Arrays.toString(incorrectlyMainBranching.getStackTrace()));
-                view.printOneMessage(incorrectlyMainBranching.getMessage());
+                view.printOneMessage(View.INCORRECT_MAIN_BRANCHING);
             }
+        }
+    }
+
+    private void languageChoice(String langChoice) {
+        switch (langChoice) {
+            case "2":
+                locale = new Locale("ru", "RU");
+                resourceBundle = ResourceBundle.getBundle("text", locale);
+                break;
+            case "3":
+                locale = new Locale("uk", "UA");
+                resourceBundle = ResourceBundle.getBundle("text", locale);
+                break;
+            default:
+                locale = new Locale("en", "GB");
+                resourceBundle = ResourceBundle.getBundle("text", locale);
         }
     }
 
@@ -83,7 +106,7 @@ public class Controller {
             } catch (IncorrectlyTeacher incorrectlyTeacher) {
                 logger.error(incorrectlyTeacher.getMessage() + "\n" +
                         Arrays.toString(incorrectlyTeacher.getStackTrace()));
-                view.printOneMessage(incorrectlyTeacher.getMessage());
+                view.printOneMessage(View.INCORRECT_TEACHER);
             }
         }
     }
@@ -118,7 +141,7 @@ public class Controller {
             } catch (IncorrectlyElective incorrectlyElective) {
                 logger.error(incorrectlyElective.getMessage() + "\n" +
                         Arrays.toString(incorrectlyElective.getStackTrace()));
-                view.printOneMessage(incorrectlyElective.getMessage());
+                view.printOneMessage(View.INCORRECT_ELECTIVE);
             }
         }
     }

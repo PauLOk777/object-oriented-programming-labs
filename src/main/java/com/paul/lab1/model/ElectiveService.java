@@ -18,7 +18,19 @@ public class ElectiveService {
         electives = FileIO.readElectivesJSON(PATH_TO_READ_ELECTIVES);
     }
 
-    public Elective[] getElectives() { return electives; }
+    public String[] getElectives() {
+        String[] result = new String[electives.length];
+
+        for (int i = 0; i < electives.length; i++) {
+            result[i] = electives[i].toString();
+        }
+
+        for (String elective: result) {
+            logger.debug(elective);
+        }
+
+        return result;
+    }
 
     public void writeTextElectives(String electives) throws IOException {
         FileIO.writeElectivesToTXT(electives, PATH_TO_SAVE_ELECTIVES);
