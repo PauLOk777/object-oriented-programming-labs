@@ -1,320 +1,152 @@
-[DEBUG] 2020-05-13 15:56:43.698 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 18:58:44.913 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 18:59:08.590 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 18:59:18.745 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 18:59:22.635 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 18:59:36.641 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 18:59:36.641 Controller - User get all electives.
-[DEBUG] 2020-05-13 18:59:36.644 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
-[DEBUG] 2020-05-13 18:59:36.644 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
-[DEBUG] 2020-05-13 18:59:36.645 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
-[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
-[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
-[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
-[DEBUG] 2020-05-13 18:59:36.646 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
-[DEBUG] 2020-05-13 18:59:36.647 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
-[DEBUG] 2020-05-13 18:59:36.647 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
-[DEBUG] 2020-05-13 18:59:36.647 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
-[DEBUG] 2020-05-13 18:59:40.641 RetrieveInfo - User input: 2
-[DEBUG] 2020-05-13 18:59:40.642 Controller - User get invitation to write elective.
-[DEBUG] 2020-05-13 18:59:46.644 RetrieveInfo - User input: Ukrainian language
-[DEBUG] 2020-05-13 18:59:46.650 ElectiveService - Average mark in Ukrainian language: 6.46
-[DEBUG] 2020-05-13 18:59:53.647 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 18:59:53.647 Controller - User get invitation to write teacher.
-[DEBUG] 2020-05-13 18:59:57.648 RetrieveInfo - User input: Ivanov Ivan Ivanovich
-[DEBUG] 2020-05-13 18:59:57.649 ElectiveService - 
+[DEBUG] 2020-05-14 00:21:59.968 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:22:00.047 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:22:00.048 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 00:22:03.982 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-14 00:22:03.982 View - User changed default locale to: en-GB
+[DEBUG] 2020-05-14 00:22:03.984 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 00:22:12.986 RetrieveInfo - User input: 4
+[ERROR] 2020-05-14 00:22:12.987 Controller - Bad query, please read instruction again and choose correct variant.
+
+
+[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:35), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-14 00:22:12.988 View - Invalid option! Try more.
+[DEBUG] 2020-05-14 00:22:12.988 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 00:22:14.987 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-14 00:22:14.988 Controller - User get invitation to write teacher.
+[DEBUG] 2020-05-14 00:22:14.988 View - Write full name of teacher. For example: "Ivanov Ivan Ivanovich".
+[DEBUG] 2020-05-14 00:22:22.993 RetrieveInfo - User input: dj
+[ERROR] 2020-05-14 00:22:22.994 Controller - Bad full name. Check instruction.
+[com.paul.lab1.controller.Validator.checkTeacher(Validator.java:20), com.paul.lab1.controller.Controller.invitationToWriteTeacher(Controller.java:96), com.paul.lab1.controller.Controller.run(Controller.java:39), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-14 00:22:22.995 View - Invalid teacher! Try more.
+[DEBUG] 2020-05-14 00:22:22.995 View - Write full name of teacher. For example: "Ivanov Ivan Ivanovich".
+[DEBUG] 2020-05-14 00:22:28.996 RetrieveInfo - User input: Ivanov Ivan Ivanovich
+[DEBUG] 2020-05-14 00:22:28.996 ElectiveService - 
 Math
 Chemistry
 
-[DEBUG] 2020-05-13 19:00:05.653 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 19:00:05.656 Controller - File was saved successfully
-[DEBUG] 2020-05-13 19:00:06.654 RetrieveInfo - User input: 
-[ERROR] 2020-05-13 19:00:06.655 Controller - Bad query, please read instruction again and choose correct variant.
-
-
-[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:37), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-13 19:00:11.656 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 19:00:11.657 Controller - User exit from application.
-[DEBUG] 2020-05-13 19:03:45.817 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 19:03:48.795 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 19:03:52.796 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 19:03:52.797 Controller - User get all electives.
-[DEBUG] 2020-05-13 19:03:52.800 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
-[DEBUG] 2020-05-13 19:03:52.800 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
-[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
-[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
-[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
-[DEBUG] 2020-05-13 19:03:52.801 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
-[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
-[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
-[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
-[DEBUG] 2020-05-13 19:03:52.802 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
-[DEBUG] 2020-05-13 20:12:33.072 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:12:44.273 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 20:12:56.279 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 20:12:56.279 Controller - User exit from application.
-[DEBUG] 2020-05-13 20:16:38.228 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:16:42.669 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 20:16:49.671 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 20:16:49.671 Controller - User exit from application.
-[DEBUG] 2020-05-13 20:21:33.699 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:21:38.169 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 20:22:14.056 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:23:17.977 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:23:22.438 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 20:23:24.439 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 20:23:24.439 Controller - User exit from application.
-[DEBUG] 2020-05-13 20:25:16.059 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:25:37.995 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:26:02.463 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 20:26:04.463 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 20:26:04.463 Controller - User exit from application.
-[DEBUG] 2020-05-13 20:27:56.699 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:28:07.123 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 20:28:09.124 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 20:28:09.124 Controller - User exit from application.
-[DEBUG] 2020-05-13 20:29:49.743 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:34:24.762 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:34:29.201 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 20:36:30.227 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:36:41.248 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:38:08.794 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:39:28.307 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:39:50.298 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:40:59.749 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 20:41:03.750 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 20:41:03.750 Controller - User exit from application.
-[DEBUG] 2020-05-13 20:41:08.209 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 20:41:20.660 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 20:41:23.661 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 20:41:23.661 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:01:42.140 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:01:50.412 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:01:56.414 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 21:01:56.414 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:03:54.411 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:03:59.734 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:04:03.736 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 21:04:03.736 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:25:47.153 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:25:53.634 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:26:00.637 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 21:26:00.637 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:26:19.383 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:26:23.843 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:26:33.848 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 21:26:33.848 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:26:46.154 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:26:56.628 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:27:33.159 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:42:02.304 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:42:06.260 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 21:43:49.313 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 21:43:49.313 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:43:53.364 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:43:58.784 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:44:01.785 RetrieveInfo - User input: 2
-[DEBUG] 2020-05-13 21:44:01.786 Controller - User get invitation to write elective.
-[DEBUG] 2020-05-13 21:44:03.785 RetrieveInfo - User input: 3
-[ERROR] 2020-05-13 21:44:03.788 Controller - Bad elective name. Check instruction.
-[com.paul.lab1.controller.Validator.checkElective(Validator.java:25), com.paul.lab1.controller.Controller.invitationToWriteElective(Controller.java:132), com.paul.lab1.controller.Controller.run(Controller.java:43), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-13 21:44:06.787 RetrieveInfo - User input: quit
-[ERROR] 2020-05-13 21:44:06.788 Controller - Bad elective name. Check instruction.
-[com.paul.lab1.controller.Validator.checkElective(Validator.java:25), com.paul.lab1.controller.Controller.invitationToWriteElective(Controller.java:132), com.paul.lab1.controller.Controller.run(Controller.java:43), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-13 21:54:22.116 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:54:29.998 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:54:32.998 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 21:54:32.999 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:55:11.333 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:55:19.275 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 21:55:23.277 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 21:55:23.278 Controller - User exit from application.
-[DEBUG] 2020-05-13 21:58:03.312 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 21:58:06.361 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:02:08.184 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:02:11.152 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:02:14.154 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:02:14.155 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:04:28.407 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:04:33.336 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:04:37.338 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:04:37.338 Controller - User get invitation to write teacher.
-[DEBUG] 2020-05-13 22:05:00.335 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:05:06.340 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:05:09.341 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:05:09.343 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:05:24.670 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:05:28.598 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:05:30.599 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:05:30.599 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:05:33.932 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:05:38.717 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 22:05:40.716 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:05:40.717 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:06:44.235 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:06:50.218 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:06:59.223 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:06:59.224 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:07:05.753 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:07:09.637 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:07:11.638 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:07:11.639 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:14:11.326 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:25:50.696 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:25:54.696 RetrieveInfo - User input: 
-[ERROR] 2020-05-13 22:25:54.696 Controller - Bad query, please read instruction again and choose correct variant.
-
-
-[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:35), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-13 22:25:56.697 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 22:25:56.698 Controller - User get all electives.
-[DEBUG] 2020-05-13 22:25:56.701 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
-[DEBUG] 2020-05-13 22:25:56.701 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
-[DEBUG] 2020-05-13 22:25:56.701 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
-[DEBUG] 2020-05-13 22:25:56.701 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
-[DEBUG] 2020-05-13 22:25:56.702 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
-[DEBUG] 2020-05-13 22:25:56.702 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
-[DEBUG] 2020-05-13 22:25:56.702 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
-[DEBUG] 2020-05-13 22:25:56.703 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
-[DEBUG] 2020-05-13 22:25:56.703 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
-[DEBUG] 2020-05-13 22:25:56.703 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
-[DEBUG] 2020-05-13 22:25:59.699 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:25:59.700 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:29:39.903 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:29:43.807 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:29:45.807 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:29:45.808 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:30:00.461 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:30:04.450 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:30:06.449 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:30:06.450 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:32:16.555 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:32:19.544 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 22:32:25.544 RetrieveInfo - User input: qui
-[ERROR] 2020-05-13 22:32:25.545 Controller - Bad query, please read instruction again and choose correct variant.
-
-
-[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:35), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-13 22:32:28.546 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:32:28.547 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:36:20.195 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:36:35.097 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:36:41.962 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:37:27.816 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:37:31.890 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:42:24.764 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:42:28.702 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:42:32.703 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:42:32.703 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:43:36.995 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:43:41.053 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 22:43:44.054 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:43:44.055 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:45:10.694 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:45:15.769 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:45:17.769 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:45:17.770 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:45:35.601 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:45:40.510 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:45:42.510 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:45:42.511 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:45:59.243 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:46:02.270 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:46:04.270 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:46:04.271 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:46:55.576 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:47:04.618 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:47:07.619 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:47:07.620 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:47:25.962 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:48:24.947 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-13 22:48:29.948 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:48:29.948 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:48:50.343 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:48:54.213 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:48:56.213 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:48:56.213 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:49:25.423 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:49:29.428 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:49:31.428 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:49:31.429 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:50:32.075 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:50:36.073 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:50:38.073 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:50:38.073 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:52:20.889 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:52:24.761 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:52:26.761 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:52:26.762 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:52:55.375 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:52:58.401 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:53:00.401 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:53:00.401 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:55:11.442 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:55:14.276 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:55:17.277 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:55:17.278 Controller - User exit from application.
-[DEBUG] 2020-05-13 22:56:47.562 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 22:56:51.589 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 22:56:53.590 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 22:56:53.591 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:02:15.093 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:02:20.160 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:02:22.160 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:02:22.161 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:02:59.846 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:03:03.890 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:03:05.890 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:03:05.891 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:03:33.636 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:03:36.627 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:03:38.627 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:03:38.628 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:03:52.718 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:03:55.661 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:03:57.661 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:03:57.662 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:04:23.803 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:04:26.603 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:04:28.604 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:04:28.604 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:05:34.214 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:05:39.139 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:05:44.140 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:05:44.141 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:06:05.604 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:06:12.532 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:06:14.532 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:06:14.532 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:06:34.788 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:06:37.711 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:06:39.713 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:06:39.713 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:08:21.803 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:08:24.793 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:08:26.793 RetrieveInfo - User input: uit
-[ERROR] 2020-05-13 23:08:26.795 Controller - Bad query, please read instruction again and choose correct variant.
-
-
-[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:35), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-13 23:08:28.796 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:08:28.796 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:10:45.120 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:11:04.066 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:13:54.216 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:17:32.964 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:17:55.694 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:19:51.761 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:21:14.937 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:22:29.706 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:24:07.950 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:24:10.806 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:24:15.806 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-13 23:24:15.807 Controller - User exit from application.
-[DEBUG] 2020-05-13 23:27:29.227 Controller - Electives was defined successful.
-[DEBUG] 2020-05-13 23:28:10.257 RetrieveInfo - User input: 
-[DEBUG] 2020-05-13 23:28:10.272 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-13 23:28:10.273 Controller - User get invitation to write teacher.
-[DEBUG] 2020-05-13 23:28:14.259 RetrieveInfo - User input: quit
-[ERROR] 2020-05-13 23:28:14.261 Controller - Bad full name. Check instruction.
-[com.paul.lab1.controller.Validator.checkTeacher(Validator.java:20), com.paul.lab1.controller.Controller.invitationToWriteTeacher(Controller.java:96), com.paul.lab1.controller.Controller.run(Controller.java:39), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-14 00:22:28.997 View - To save this result press 1, to skip - press any button.
+[DEBUG] 2020-05-14 00:22:32.997 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-14 00:22:33.000 View - File was saved successfully.
+[DEBUG] 2020-05-14 00:22:33.001 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 00:22:35.999 RetrieveInfo - User input: 2
+[DEBUG] 2020-05-14 00:22:36.000 Controller - User get invitation to write elective.
+[DEBUG] 2020-05-14 00:22:36.000 View - Write name of elective. For example: "Ukrainian language".
+[DEBUG] 2020-05-14 00:22:38.000 RetrieveInfo - User input: d
+[ERROR] 2020-05-14 00:22:38.002 Controller - Bad elective name. Check instruction.
+[com.paul.lab1.controller.Validator.checkElective(Validator.java:25), com.paul.lab1.controller.Controller.invitationToWriteElective(Controller.java:131), com.paul.lab1.controller.Controller.run(Controller.java:43), com.paul.lab1.Main.main(Main.java:7)]
+[DEBUG] 2020-05-14 00:22:38.002 View - Invalid elective! Try more.
+[DEBUG] 2020-05-14 00:22:38.002 View - Write name of elective. For example: "Ukrainian language".
+[DEBUG] 2020-05-14 00:22:46.003 RetrieveInfo - User input: Ukrainian language
+[DEBUG] 2020-05-14 00:22:46.007 ElectiveService - Average mark in Ukrainian language: 6.46
+[DEBUG] 2020-05-14 00:22:46.008 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 00:22:53.007 RetrieveInfo - User input: 3
+[DEBUG] 2020-05-14 00:22:53.007 Controller - User get all electives.
+[DEBUG] 2020-05-14 00:22:53.009 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
+[DEBUG] 2020-05-14 00:22:53.010 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
+[DEBUG] 2020-05-14 00:22:53.010 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
+[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
+[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
+[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
+[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
+[DEBUG] 2020-05-14 00:22:53.012 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
+[DEBUG] 2020-05-14 00:22:53.012 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
+[DEBUG] 2020-05-14 00:22:53.012 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
+[DEBUG] 2020-05-14 00:22:53.022 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 00:22:56.008 RetrieveInfo - User input: quit
+[DEBUG] 2020-05-14 00:22:56.010 Controller - User exit from application.
+[DEBUG] 2020-05-14 00:22:56.010 View - Goodbye!
+[DEBUG] 2020-05-14 00:24:12.979 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:24:13.053 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:24:13.053 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 00:33:30.121 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:33:30.183 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:33:30.184 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 00:33:35.618 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-14 00:33:35.618 View - User changed default locale to: en-GB
+[DEBUG] 2020-05-14 00:33:35.619 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 00:33:37.619 RetrieveInfo - User input: quit
+[DEBUG] 2020-05-14 00:33:37.619 Controller - User exit from application.
+[DEBUG] 2020-05-14 00:33:37.619 View - Goodbye!
+[DEBUG] 2020-05-14 00:34:15.311 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:34:15.365 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:34:15.365 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 00:34:19.665 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-14 00:34:19.665 View - User changed default locale to: en-GB
+[DEBUG] 2020-05-14 00:34:19.666 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 00:34:21.665 RetrieveInfo - User input: quit
+[DEBUG] 2020-05-14 00:34:21.665 Controller - User exit from application.
+[DEBUG] 2020-05-14 00:34:21.665 View - Goodbye!
+[DEBUG] 2020-05-14 00:37:18.761 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:37:18.809 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:37:18.809 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 00:38:31.013 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:38:31.059 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:38:31.059 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 00:40:51.259 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:40:51.304 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:40:51.304 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 00:40:56.564 RetrieveInfo - User input: 3
+[DEBUG] 2020-05-14 00:40:56.564 View - User changed default locale to: uk-UA
+[DEBUG] 2020-05-14 00:40:56.566 View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG] 2020-05-14 00:41:00.565 RetrieveInfo - User input: quit
+[DEBUG] 2020-05-14 00:41:00.565 Controller - User exit from application.
+[DEBUG] 2020-05-14 00:41:00.565 View - До побачення!
+[DEBUG] 2020-05-14 00:55:03.023 View - User default locale: ru-RU
+[DEBUG] 2020-05-14 00:55:03.072 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 00:55:03.072 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.

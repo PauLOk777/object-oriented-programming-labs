@@ -1,5 +1,8 @@
 package com.paul.lab1.view;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -25,21 +28,32 @@ public class View {
     private static String endDate = "end_date";
     private static String students = "students";
 
-    private static Locale locale = Locale.getDefault();
-    private static ResourceBundle resourceBundle = ResourceBundle.getBundle("text", locale);
+    private static Logger logger = LogManager.getLogger();
+
+    private static Locale locale;
+    private static ResourceBundle resourceBundle;
+
+    static {
+        locale = Locale.getDefault();
+        logger.debug("User default locale: " + locale.getLanguage() + "-" + locale.getCountry());
+        resourceBundle = ResourceBundle.getBundle("text", locale);
+    }
 
     public void setLocaleAndResBundle(Locale locale) {
         View.locale = locale;
         Locale.setDefault(locale);
+        logger.debug("User changed default locale to: " + locale.getLanguage() + "-" + locale.getCountry());
         resourceBundle = ResourceBundle.getBundle("text");
     }
 
     public void printOneMessage(String data) {
-        byte[] bytes = resourceBundle.getString(data).getBytes();
+        String value = resourceBundle.getString(data);
+//        byte[] bytes = resourceBundle.getString(data).getBytes();
 
-        // for (byte character: bytes) System.out.println(character);
+//        for (byte character: bytes) System.out.println((char) character);
 
-        System.out.println(resourceBundle.getString(data));
+        System.out.println(value);
+        logger.debug(value);
     }
 
     public void showAllElectives(String[] electives) {

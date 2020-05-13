@@ -112,13 +112,12 @@ public class Controller {
         if (option.equals("1")) {
             try {
                 service.writeTextElectives(electives);
-                logger.debug(View.successfulSave);
                 view.printOneMessage(View.successfulSave);
             } catch (FileNotFoundException e) {
-                logger.error(View.fileNotFound + "\n" + Arrays.toString(e.getStackTrace()));
+                logger.error("File not found." + "\n" + Arrays.toString(e.getStackTrace()));
                 view.printOneMessage(View.fileNotFound);
             } catch (IOException e) {
-                logger.error(View.fileException + "\n" + Arrays.toString(e.getStackTrace()));
+                logger.error("File exception" + "\n" + Arrays.toString(e.getStackTrace()));
                 view.printOneMessage(View.fileException);
             }
         }
