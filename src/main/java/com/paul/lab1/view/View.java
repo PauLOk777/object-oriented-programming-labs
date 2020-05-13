@@ -1,44 +1,52 @@
 package com.paul.lab1.view;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 public class View {
-    public static final String LANG_MENU = "Change your language (type a number of option):\n" +
-            "1. English (default).\n" +
-            "2. Russian.\n" +
-            "3. Ukrainian.";
-    public static final String MAIN_MENU = "To select the option, write number of this option and press enter:\n" +
-            "1. Get a list of electives that " +
-            "are taught by the instructor specified.\n"  +
-            "2. Get an average student score " +
-            "for the specified elective.\n" +
-            "3. Get all electives.\n" +
-            "If you want to exit from this app, write \"quit\".";
-    public static final String INVITATION_TO_WRITE_TEACHER = "Write full name of teacher. " +
-            "For example: \"Ivanov Ivan Ivanovich\".";
-    public static final String INVITATION_TO_WRITE_ELECTIVE = "Write name of elective. " +
-            "For example: \"Ukrainian language\".";
-    public static final String QUIT = "Goodbye!";
-    public static final String INVITATION_TO_RECORD_IN_FILE = "To save this result press 1, to skip - press any button";
-    public static final String FILE_NOT_FOUND = "No access. File not found";
-    public static final String FILE_EXCEPTION = "No access. Some problems with file";
-    public static final String SUCCESSFUL_SAVE = "File was saved successfully";
-    public static final String INCORRECT_MAIN_BRANCHING = "Invalid option! Try more.";
-    public static final String INCORRECT_TEACHER = "Invalid teacher! Try more.";
-    public static final String INCORRECT_ELECTIVE = "Invalid elective! Try more.";
-    private static final String TEACHER_WITHOUT_ELECTIVES = "This teacher does not teach anything.";
-    private static final String ELECTIVE_NAME = "Elective name";
-    private static final String NO_ELECTIVES = "No any elective with this name.";
-    private static final String AVERAGE_MARK = "Average mark of elective";
-    private static final String TEACHER = "Teacher";
-    private static final String START_DATE = "Start date";
-    private static final String END_DATE = "End date";
-    private static final String STUDENTS = "Students";
+    public static String langMenu = "lang_menu";
+    public static String mainMenu = "main_menu";
+    public static String quit = "quit";
+    public static String invitationToWriteTeacher = "invitation_to_write_teacher";
+    public static String invitationToWriteElective = "invitation_to_write_elective";
+    public static String invitationToRecordInFile = "invitation_to_record_in_file";
+    public static String fileNotFound = "file_not_found";
+    public static String fileException = "file_exception";
+    public static String successfulSave = "successful_save";
+    public static String incorrectMainBranching = "incorrect_main_branching";
+    public static String incorrectTeacher = "incorrect_teacher";
+    public static String incorrectElective = "incorrect_elective";
+    private static String teacherWithoutElectives = "teacher_without_electives";
+    private static String electiveName = "elective_name";
+    private static String noElectives = "no_electives";
+    private static String averageMark = "average_mark";
+    private static String teacher = "teacher";
+    private static String startDate = "start_date";
+    private static String endDate = "end_date";
+    private static String students = "students";
+
+    private static Locale locale = Locale.getDefault();
+    private static ResourceBundle resourceBundle = ResourceBundle.getBundle("text", locale);
+
+    public void setLocaleAndResBundle(Locale locale) {
+        View.locale = locale;
+        Locale.setDefault(locale);
+        resourceBundle = ResourceBundle.getBundle("text");
+    }
 
     public void printOneMessage(String data) {
-        System.out.println(data);
+        byte[] bytes = resourceBundle.getString(data).getBytes();
+
+        for (byte character: bytes) System.out.println(character);
+
+        System.out.println();
     }
 
     public void showAllElectives(String[] electives) {
-        System.out.printf(ParseObjectElective.FORMAT, ELECTIVE_NAME, TEACHER, START_DATE, END_DATE, STUDENTS);
+        System.out.printf(ParseObjectElective.FORMAT,
+                resourceBundle.getString(electiveName),resourceBundle.getString(teacher),
+                resourceBundle.getString(startDate), resourceBundle.getString(endDate),
+                resourceBundle.getString(students));
 
         for (String elective: electives) {
             System.out.print(ParseObjectElective.parseToString(elective));
@@ -49,17 +57,17 @@ public class View {
 
     public void showElectives(String result) {
         if(result.isEmpty()) {
-            System.out.println(TEACHER_WITHOUT_ELECTIVES);
+            System.out.println(resourceBundle.getString(teacherWithoutElectives));
         } else {
-            System.out.println(ELECTIVE_NAME + "\n" + result);
+            System.out.println(resourceBundle.getString(electiveName) + "\n" + result);
         }
     }
 
     public void averageMark(String electiveName, double average) {
         if(average == -1) {
-            System.out.println(NO_ELECTIVES);
+            System.out.println(resourceBundle.getString(noElectives));
         } else {
-            System.out.println(AVERAGE_MARK + " " + electiveName + ": " + average + "\n");
+            System.out.println(resourceBundle.getString(averageMark) + " " + electiveName + ": " + average + "\n");
         }
     }
 }
