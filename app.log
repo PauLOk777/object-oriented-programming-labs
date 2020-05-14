@@ -1,152 +1,152 @@
-[DEBUG] 2020-05-14 00:21:59.968 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:22:00.047 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:22:00.048 View - Выберите свой язык (напишите номер опции):
+[INFO ]  View - User default locale: ru-RU
+[INFO ]  Controller - Electives was defined successful.
+[DEBUG]  View - Выберите свой язык (напишите номер опции):
 1. Английский (по умолчанию).
 2. Русский.
 3. Украинский.
-[DEBUG] 2020-05-14 00:22:03.982 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-14 00:22:03.982 View - User changed default locale to: en-GB
-[DEBUG] 2020-05-14 00:22:03.984 View - To select the option, write number of this option and press enter:
-1. Get a list of electives that are taught by the instructor specified.
-2. Get an average student score for the specified elective.
-3. Get all electives.
-If you want to exit from this app, write "quit".
-[DEBUG] 2020-05-14 00:22:12.986 RetrieveInfo - User input: 4
-[ERROR] 2020-05-14 00:22:12.987 Controller - Bad query, please read instruction again and choose correct variant.
-
-
-[com.paul.lab1.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab1.controller.Controller.run(Controller.java:35), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-14 00:22:12.988 View - Invalid option! Try more.
-[DEBUG] 2020-05-14 00:22:12.988 View - To select the option, write number of this option and press enter:
-1. Get a list of electives that are taught by the instructor specified.
-2. Get an average student score for the specified elective.
-3. Get all electives.
-If you want to exit from this app, write "quit".
-[DEBUG] 2020-05-14 00:22:14.987 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-14 00:22:14.988 Controller - User get invitation to write teacher.
-[DEBUG] 2020-05-14 00:22:14.988 View - Write full name of teacher. For example: "Ivanov Ivan Ivanovich".
-[DEBUG] 2020-05-14 00:22:22.993 RetrieveInfo - User input: dj
-[ERROR] 2020-05-14 00:22:22.994 Controller - Bad full name. Check instruction.
-[com.paul.lab1.controller.Validator.checkTeacher(Validator.java:20), com.paul.lab1.controller.Controller.invitationToWriteTeacher(Controller.java:96), com.paul.lab1.controller.Controller.run(Controller.java:39), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-14 00:22:22.995 View - Invalid teacher! Try more.
-[DEBUG] 2020-05-14 00:22:22.995 View - Write full name of teacher. For example: "Ivanov Ivan Ivanovich".
-[DEBUG] 2020-05-14 00:22:28.996 RetrieveInfo - User input: Ivanov Ivan Ivanovich
-[DEBUG] 2020-05-14 00:22:28.996 ElectiveService - 
-Math
-Chemistry
-
-[DEBUG] 2020-05-14 00:22:28.997 View - To save this result press 1, to skip - press any button.
-[DEBUG] 2020-05-14 00:22:32.997 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-14 00:22:33.000 View - File was saved successfully.
-[DEBUG] 2020-05-14 00:22:33.001 View - To select the option, write number of this option and press enter:
-1. Get a list of electives that are taught by the instructor specified.
-2. Get an average student score for the specified elective.
-3. Get all electives.
-If you want to exit from this app, write "quit".
-[DEBUG] 2020-05-14 00:22:35.999 RetrieveInfo - User input: 2
-[DEBUG] 2020-05-14 00:22:36.000 Controller - User get invitation to write elective.
-[DEBUG] 2020-05-14 00:22:36.000 View - Write name of elective. For example: "Ukrainian language".
-[DEBUG] 2020-05-14 00:22:38.000 RetrieveInfo - User input: d
-[ERROR] 2020-05-14 00:22:38.002 Controller - Bad elective name. Check instruction.
-[com.paul.lab1.controller.Validator.checkElective(Validator.java:25), com.paul.lab1.controller.Controller.invitationToWriteElective(Controller.java:131), com.paul.lab1.controller.Controller.run(Controller.java:43), com.paul.lab1.Main.main(Main.java:7)]
-[DEBUG] 2020-05-14 00:22:38.002 View - Invalid elective! Try more.
-[DEBUG] 2020-05-14 00:22:38.002 View - Write name of elective. For example: "Ukrainian language".
-[DEBUG] 2020-05-14 00:22:46.003 RetrieveInfo - User input: Ukrainian language
-[DEBUG] 2020-05-14 00:22:46.007 ElectiveService - Average mark in Ukrainian language: 6.46
-[DEBUG] 2020-05-14 00:22:46.008 View - To select the option, write number of this option and press enter:
-1. Get a list of electives that are taught by the instructor specified.
-2. Get an average student score for the specified elective.
-3. Get all electives.
-If you want to exit from this app, write "quit".
-[DEBUG] 2020-05-14 00:22:53.007 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-14 00:22:53.007 Controller - User get all electives.
-[DEBUG] 2020-05-14 00:22:53.009 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
-[DEBUG] 2020-05-14 00:22:53.010 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
-[DEBUG] 2020-05-14 00:22:53.010 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
-[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
-[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
-[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
-[DEBUG] 2020-05-14 00:22:53.011 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
-[DEBUG] 2020-05-14 00:22:53.012 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
-[DEBUG] 2020-05-14 00:22:53.012 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
-[DEBUG] 2020-05-14 00:22:53.012 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
-[DEBUG] 2020-05-14 00:22:53.022 View - To select the option, write number of this option and press enter:
-1. Get a list of electives that are taught by the instructor specified.
-2. Get an average student score for the specified elective.
-3. Get all electives.
-If you want to exit from this app, write "quit".
-[DEBUG] 2020-05-14 00:22:56.008 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-14 00:22:56.010 Controller - User exit from application.
-[DEBUG] 2020-05-14 00:22:56.010 View - Goodbye!
-[DEBUG] 2020-05-14 00:24:12.979 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:24:13.053 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:24:13.053 View - Выберите свой язык (напишите номер опции):
-1. Английский (по умолчанию).
-2. Русский.
-3. Украинский.
-[DEBUG] 2020-05-14 00:33:30.121 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:33:30.183 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:33:30.184 View - Выберите свой язык (напишите номер опции):
-1. Английский (по умолчанию).
-2. Русский.
-3. Украинский.
-[DEBUG] 2020-05-14 00:33:35.618 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-14 00:33:35.618 View - User changed default locale to: en-GB
-[DEBUG] 2020-05-14 00:33:35.619 View - To select the option, write number of this option and press enter:
-1. Get a list of electives that are taught by the instructor specified.
-2. Get an average student score for the specified elective.
-3. Get all electives.
-If you want to exit from this app, write "quit".
-[DEBUG] 2020-05-14 00:33:37.619 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-14 00:33:37.619 Controller - User exit from application.
-[DEBUG] 2020-05-14 00:33:37.619 View - Goodbye!
-[DEBUG] 2020-05-14 00:34:15.311 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:34:15.365 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:34:15.365 View - Выберите свой язык (напишите номер опции):
-1. Английский (по умолчанию).
-2. Русский.
-3. Украинский.
-[DEBUG] 2020-05-14 00:34:19.665 RetrieveInfo - User input: 1
-[DEBUG] 2020-05-14 00:34:19.665 View - User changed default locale to: en-GB
-[DEBUG] 2020-05-14 00:34:19.666 View - To select the option, write number of this option and press enter:
-1. Get a list of electives that are taught by the instructor specified.
-2. Get an average student score for the specified elective.
-3. Get all electives.
-If you want to exit from this app, write "quit".
-[DEBUG] 2020-05-14 00:34:21.665 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-14 00:34:21.665 Controller - User exit from application.
-[DEBUG] 2020-05-14 00:34:21.665 View - Goodbye!
-[DEBUG] 2020-05-14 00:37:18.761 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:37:18.809 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:37:18.809 View - Выберите свой язык (напишите номер опции):
-1. Английский (по умолчанию).
-2. Русский.
-3. Украинский.
-[DEBUG] 2020-05-14 00:38:31.013 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:38:31.059 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:38:31.059 View - Выберите свой язык (напишите номер опции):
-1. Английский (по умолчанию).
-2. Русский.
-3. Украинский.
-[DEBUG] 2020-05-14 00:40:51.259 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:40:51.304 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:40:51.304 View - Выберите свой язык (напишите номер опции):
-1. Английский (по умолчанию).
-2. Русский.
-3. Украинский.
-[DEBUG] 2020-05-14 00:40:56.564 RetrieveInfo - User input: 3
-[DEBUG] 2020-05-14 00:40:56.564 View - User changed default locale to: uk-UA
-[DEBUG] 2020-05-14 00:40:56.566 View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+[DEBUG]  RetrieveInfo - User input: 3
+[INFO ]  View - User changed default locale to: uk-UA
+[DEBUG]  View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
 1. Отримати список всіх факультативів які веде заданий інструктор.
 2. Отримати середню оцінку всіх учнів по заданому факультативу.
 3. Отримати всі факультативи.
 Якщо ви хочете вийти з додатку, напишіть "quit".
-[DEBUG] 2020-05-14 00:41:00.565 RetrieveInfo - User input: quit
-[DEBUG] 2020-05-14 00:41:00.565 Controller - User exit from application.
-[DEBUG] 2020-05-14 00:41:00.565 View - До побачення!
-[DEBUG] 2020-05-14 00:55:03.023 View - User default locale: ru-RU
-[DEBUG] 2020-05-14 00:55:03.072 Controller - Electives was defined successful.
-[DEBUG] 2020-05-14 00:55:03.072 View - Выберите свой язык (напишите номер опции):
+[DEBUG]  RetrieveInfo - User input: 3
+[INFO ]  Controller - User get all electives.
+[DEBUG]  ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
+[DEBUG]  ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
+[DEBUG]  ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
+[DEBUG]  ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
+[DEBUG]  ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
+[DEBUG]  ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
+[DEBUG]  ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
+[DEBUG]  ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
+[DEBUG]  ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
+[DEBUG]  ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
+[DEBUG]  View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG]  RetrieveInfo - User input: 1
+[INFO ]  Controller - User get invitation to write teacher.
+[DEBUG]  View - Напишіть повне ім'я вчителя. Для прикладу: "Ivanov Ivan Ivanovich".
+[DEBUG]  RetrieveInfo - User input: Ivanov Ivan Ivanovich
+[DEBUG]  ElectiveService - 
+Math
+Chemistry
+
+[DEBUG]  View - Щоб зберегти результат натисніть 1, пропустити - натисніть інші кнопки.
+[DEBUG]  RetrieveInfo - User input: 1
+[DEBUG]  Controller - User get invitation to save file.
+[DEBUG]  View - Файл збережено успішно.
+[DEBUG]  View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG]  RetrieveInfo - User input: quit
+[INFO ]  Controller - User exit from application.
+[DEBUG]  View - До побачення!
+[INFO ]  View - User default locale: ru-RU
+[INFO ]  Controller - Electives was defined successful.
+[DEBUG]  View - Выберите свой язык (напишите номер опции):
 1. Английский (по умолчанию).
 2. Русский.
 3. Украинский.
+[DEBUG]  RetrieveInfo - User input: 2
+[INFO ]  View - User changed default locale to: ru-RU
+[DEBUG]  View - Что бы выбрать опцию, напишите номер этой опции и нажмите энтер:
+1. Получить список факультативов которые ведет заданный учитель.
+2. Получить среднюю оценку всех учеников по заданному факультативу.
+3. Получить все факультативы.
+Если вы хотите выйти с приложения, напишите "quit".
+[DEBUG]  RetrieveInfo - User input: 3
+[INFO ]  Controller - User get all electives.
+[DEBUG]  ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
+[DEBUG]  ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
+[DEBUG]  ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
+[DEBUG]  ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
+[DEBUG]  ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
+[DEBUG]  ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
+[DEBUG]  ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
+[DEBUG]  ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
+[DEBUG]  ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
+[DEBUG]  ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
+[DEBUG]  View - Что бы выбрать опцию, напишите номер этой опции и нажмите энтер:
+1. Получить список факультативов которые ведет заданный учитель.
+2. Получить среднюю оценку всех учеников по заданному факультативу.
+3. Получить все факультативы.
+Если вы хотите выйти с приложения, напишите "quit".
+[DEBUG]  RetrieveInfo - User input: 2
+[INFO ]  Controller - User get invitation to write elective.
+[DEBUG]  View - Напишите полное название факультатива. К примеру: "Ukrainian language".
+[DEBUG]  RetrieveInfo - User input: Biology
+[DEBUG]  ElectiveService - Average mark in Biology: 7.64
+[DEBUG]  View - Что бы выбрать опцию, напишите номер этой опции и нажмите энтер:
+1. Получить список факультативов которые ведет заданный учитель.
+2. Получить среднюю оценку всех учеников по заданному факультативу.
+3. Получить все факультативы.
+Если вы хотите выйти с приложения, напишите "quit".
+[DEBUG]  RetrieveInfo - User input: quit
+[INFO ]  Controller - User exit from application.
+[DEBUG]  View - До свидания!
+[INFO ] 2020-05-14 11:23:42,528 View - User default locale: ru-RU
+[INFO ] 2020-05-14 11:23:42,641 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 11:23:42,642 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 11:23:49,254 RetrieveInfo - User input: 1
+[INFO ] 2020-05-14 11:23:49,259 View - User changed default locale to: en-GB
+[DEBUG] 2020-05-14 11:23:49,260 View - To select the option, write number of this option and press enter:
+1. Get a list of electives that are taught by the instructor specified.
+2. Get an average student score for the specified elective.
+3. Get all electives.
+If you want to exit from this app, write "quit".
+[DEBUG] 2020-05-14 11:23:52,254 RetrieveInfo - User input: quit
+[INFO ] 2020-05-14 11:23:52,255 Controller - User exit from application.
+[DEBUG] 2020-05-14 11:23:52,255 View - Goodbye!
+[INFO ] 2020-05-14 11:24:47,892 View - User default locale: ru-RU
+[INFO ] 2020-05-14 11:24:47,980 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 11:24:47,981 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 11:24:52,465 RetrieveInfo - User input: 2
+[INFO ] 2020-05-14 11:24:52,466 View - User changed default locale to: ru-RU
+[DEBUG] 2020-05-14 11:24:52,466 View - Что бы выбрать опцию, напишите номер этой опции и нажмите энтер:
+1. Получить список факультативов которые ведет заданный учитель.
+2. Получить среднюю оценку всех учеников по заданному факультативу.
+3. Получить все факультативы.
+Если вы хотите выйти с приложения, напишите "quit".
+[DEBUG] 2020-05-14 11:24:56,468 RetrieveInfo - User input: 3
+[INFO ] 2020-05-14 11:24:56,469 Controller - User get all electives.
+[DEBUG] 2020-05-14 11:24:56,470 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
+[DEBUG] 2020-05-14 11:24:56,470 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
+[DEBUG] 2020-05-14 11:24:56,470 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
+[DEBUG] 2020-05-14 11:24:56,471 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
+[DEBUG] 2020-05-14 11:24:56,471 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
+[DEBUG] 2020-05-14 11:24:56,471 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
+[DEBUG] 2020-05-14 11:24:56,471 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
+[DEBUG] 2020-05-14 11:24:56,471 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
+[DEBUG] 2020-05-14 11:24:56,471 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
+[DEBUG] 2020-05-14 11:24:56,472 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
+[DEBUG] 2020-05-14 11:24:56,479 View - Что бы выбрать опцию, напишите номер этой опции и нажмите энтер:
+1. Получить список факультативов которые ведет заданный учитель.
+2. Получить среднюю оценку всех учеников по заданному факультативу.
+3. Получить все факультативы.
+Если вы хотите выйти с приложения, напишите "quit".
+[DEBUG] 2020-05-14 11:24:58,467 RetrieveInfo - User input: 2
+[INFO ] 2020-05-14 11:24:58,469 Controller - User get invitation to write elective.
+[DEBUG] 2020-05-14 11:24:58,469 View - Напишите полное название факультатива. К примеру: "Ukrainian language".
+[DEBUG] 2020-05-14 11:25:02,470 RetrieveInfo - User input: Biology
+[DEBUG] 2020-05-14 11:25:02,473 ElectiveService - Average mark in Biology: 7.64
+[DEBUG] 2020-05-14 11:25:02,474 View - Что бы выбрать опцию, напишите номер этой опции и нажмите энтер:
+1. Получить список факультативов которые ведет заданный учитель.
+2. Получить среднюю оценку всех учеников по заданному факультативу.
+3. Получить все факультативы.
+Если вы хотите выйти с приложения, напишите "quit".
+[DEBUG] 2020-05-14 11:25:04,471 RetrieveInfo - User input: quit
+[INFO ] 2020-05-14 11:25:04,471 Controller - User exit from application.
+[DEBUG] 2020-05-14 11:25:04,471 View - До свидания!

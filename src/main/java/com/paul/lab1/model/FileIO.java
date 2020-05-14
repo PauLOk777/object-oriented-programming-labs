@@ -10,21 +10,21 @@ import java.io.FileOutputStream;
 class FileIO {
     static Elective[] readElectivesJSON(String filePath) throws IOException {
         Gson gson = new Gson();
-        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(filePath));
-        StringBuilder electivesStr = new StringBuilder();
-        byte byteData;
+        try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(filePath))) {
+            StringBuilder electivesStr = new StringBuilder();
+            byte byteData;
 
-        while ((byteData = (byte)bis.read()) != -1) {
-            electivesStr.append((char)byteData);
+            while ((byteData = (byte)bis.read()) != -1) {
+                electivesStr.append((char)byteData);
+            }
+
+            return gson.fromJson(electivesStr.toString(), Elective[].class);
         }
-
-        bis.close();
-        return gson.fromJson(electivesStr.toString(), Elective[].class);
     }
 
     static void writeElectivesToTXT(String electives, String filePath) throws IOException {
-        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
-        bos.write(electives.getBytes());
-        bos.close();
+        try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath))){
+            bos.write(electives.getBytes());
+        }
     }
 }

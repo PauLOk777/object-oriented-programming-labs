@@ -46,7 +46,7 @@ public class ElectiveService {
         }
 
         if (searchedElective == null) {
-            logger.error("No such electives.");
+            logger.warn("No such electives.");
             return -1;
         }
 
