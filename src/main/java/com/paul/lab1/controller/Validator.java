@@ -1,27 +1,15 @@
 package com.paul.lab1.controller;
 
-import com.paul.lab1.controller.validatorExceptions.IncorrectlyElective;
-import com.paul.lab1.controller.validatorExceptions.IncorrectlyMainBranching;
-import com.paul.lab1.controller.validatorExceptions.IncorrectlyTeacher;
-
-class Validator {
-    private static final String BAD_TEACHER_NAME = "Bad full name. Check instruction.";
-    private static final String BAD_ELECTIVE_NAME = "Bad elective name. Check instruction.";
-    private static final String BAD_QUERY = "Bad query, please read instruction again and choose correct variant.\n\n";
-
-    void checkCorrectnessMainBranching(String data) {
-        if (!data.matches("[1-3]|quit")) {
-            throw new IncorrectlyMainBranching(BAD_QUERY);
-        }
+public class Validator {
+    public boolean checkCorrectnessMainBranching(String data) {
+        return data.matches("[1-3]|quit");
     }
 
-    void checkTeacher(String data) {
-        if(!data.matches("^[A-Z][a-z]+\\s+[A-Z][a-z]+\\s+[A-Z][a-z]+"))
-            throw new IncorrectlyTeacher(BAD_TEACHER_NAME);
+    public boolean checkTeacher(String data) {
+        return data.matches("^[A-Z][a-z]+\\s+[A-Z][a-z]+\\s+[A-Z][a-z]+");
     }
 
-    void checkElective(String data) {
-        if(!data.matches("^[A-Z][\\w\\s-]*"))
-            throw new IncorrectlyElective(BAD_ELECTIVE_NAME);
+    public boolean checkElective(String data) {
+        return data.matches("^[A-Z][\\w\\s-]*");
     }
 }

@@ -1,10 +1,15 @@
-package com.paul.lab1.model;
+package com.paul.lab3.model;
+
+import java.io.IOException;
 
 public class ElectiveService {
     private Elective[] electives;
+    private final static String PATH = "C:\\projects\\object-oriented-programming-labs\\data.json";
+    private final static String PATH_ELECTIVES = "C:\\projects\\object-oriented-programming-labs\\electives.txt";
 
-    public ElectiveService() {
-        electives = DataSource.getNewElectives();
+    public ElectiveService() throws IOException {
+//        electives = DataSource.getNewElectives();
+        electives = FileIO.readElectivesJSON(PATH);
     }
 
     public String[] getElectives() {
@@ -15,6 +20,10 @@ public class ElectiveService {
         }
 
         return result;
+    }
+
+    public void writeTextElectives(String electives) throws IOException {
+        FileIO.writeElectivesToTXT(electives, PATH_ELECTIVES);
     }
 
     public double getAverageMark(String electiveName) {
@@ -30,13 +39,13 @@ public class ElectiveService {
 
         double sum = 0;
         double[][] marks = searchedElective.getMarks();
-        for (int i = 0; i < DataSource.NUMBER_OF_STUDENTS; i++) {
-            for (int j = 0; j < DataSource.MAX_NUMBER_OF_MARKS; j++) {
-                sum += marks[i][j];
+        for (double[] markElective : marks) {
+            for (double note : markElective) {
+                sum += note;
             }
         }
 
-        return sum / (DataSource.NUMBER_OF_STUDENTS * DataSource.MAX_NUMBER_OF_MARKS);
+        return sum / (marks.length * marks[0].length);
     }
 
     public String getElectivesFromOneTeacher(String teacher) {

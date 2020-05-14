@@ -1,4 +1,4 @@
-package com.paul.lab1.view;
+package com.paul.lab2.view;
 
 public class ParseObjectElective {
     public static final String FORMAT = "%20s | %30s | %10s | %10s | %s\n";

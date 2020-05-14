@@ -1,4 +1,4 @@
-package com.paul.lab1.view;
+package com.paul.lab2.view;
 
 public class View {
     public static final String MAIN_MENU = "To select the option, write number of this and press enter:\n" +
@@ -12,9 +12,6 @@ public class View {
             "For example: \"Ivanov Ivan Ivanovich\".";
     public static final String INVITATION_TO_WRITE_ELECTIVE = "Write name of elective." +
             " For example: \"Ukrainian language\".";
-    public static final String BAD_TEACHER_NAME = "Bad full name. Check instruction.";
-    public static final String BAD_ELECTIVE_NAME = "Bad elective name. Check instruction.";
-    public static final String BAD_QUERY = "Bad query, please read instruction again and choose correct variant.\n\n";
     public static final String QUIT = "Goodbye!";
 
     public void printOneMessage(String data) {

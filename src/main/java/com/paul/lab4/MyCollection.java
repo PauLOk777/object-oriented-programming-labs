@@ -3,7 +3,7 @@ package com.paul.lab4;
 import java.util.*;
 
 public class MyCollection {
-    private Collection<PlainOldJavaObject> myCollection;
+    private Collection<PlainOldJavaObject> myCollection = null;
 
     MyCollection() {}
 
@@ -80,6 +80,11 @@ public class MyCollection {
     }
 
     public void getUniqueByNameType() {
+        if (myCollection == null) {
+            System.out.println("Fill collection!!!");
+            return;
+        }
+
         Iterator<PlainOldJavaObject> iteratorOuter = myCollection.iterator();
 
         while (iteratorOuter.hasNext()) {
@@ -97,6 +102,10 @@ public class MyCollection {
     }
 
     public void showElements() {
+        if (myCollection == null) {
+            return;
+        }
+
         for (PlainOldJavaObject plainOldJavaObject : myCollection) {
             System.out.println(plainOldJavaObject);
         }

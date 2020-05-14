@@ -1,13 +1,13 @@
-package com.paul.lab1.model;
+package com.paul.lab5.model;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Random;
 
-public class DataSource {
-    public static final int NUMBER_OF_STUDENTS = 5;
-    public static final int MAX_NUMBER_OF_MARKS = 10;
-    public static final int MAX_MARK = 12;
+class DataSource {
+    private static final int NUMBER_OF_STUDENTS = 5;
+    private static final int MAX_NUMBER_OF_MARKS = 10;
+    private static final int MAX_MARK = 12;
 
     private static final String[] electiveNames = {
             "Physics", "Math", "Computer Science", "Chemistry",
@@ -21,15 +21,15 @@ public class DataSource {
     };
 
     private static final Calendar[] startDates = {
-            new GregorianCalendar(2019, 9, 1),
-            new GregorianCalendar(2019, 10, 5),
-            new GregorianCalendar(2019, 9, 15)
+            new GregorianCalendar(2019, Calendar.SEPTEMBER, 1),
+            new GregorianCalendar(2019, Calendar.OCTOBER, 5),
+            new GregorianCalendar(2019, Calendar.SEPTEMBER, 15)
     };
 
     private static final Calendar[] endDates = {
-            new GregorianCalendar(2020, 5, 25),
-            new GregorianCalendar(2020, 5, 1),
-            new GregorianCalendar(2020, 6, 5)
+            new GregorianCalendar(2020, Calendar.MAY, 25),
+            new GregorianCalendar(2020, Calendar.MAY, 1),
+            new GregorianCalendar(2020, Calendar.JUNE, 5)
     };
 
     private static final String[] students = {
@@ -39,7 +39,7 @@ public class DataSource {
             "Verko Olga", "Sharikov Sergiy", "Krasnovil Oleg"
     };
 
-    public static Elective[] getNewElectives() {
+    static Elective[] getNewElectives() {
         Elective[] electives = new Elective[DataSource.numberOfElectives()];
         String[] electiveNames = DataSource.getElectiveNames();
 

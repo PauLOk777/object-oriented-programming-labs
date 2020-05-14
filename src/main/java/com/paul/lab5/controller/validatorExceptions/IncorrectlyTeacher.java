@@ -1,4 +1,4 @@
-package com.paul.lab1.controller.validatorExceptions;
+package com.paul.lab5.controller.validatorExceptions;
 
 public class IncorrectlyTeacher extends RuntimeException {
     public IncorrectlyTeacher() { super("Some problems with teacher."); }

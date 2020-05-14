@@ -1,4 +1,4 @@
-package com.paul.lab1.model;
+package com.paul.lab5.model;
 
 import com.google.gson.Gson;
 import java.io.IOException;

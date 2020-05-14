@@ -1,4 +1,4 @@
-package com.paul.lab1.view;
+package com.paul.lab2.view;
 
 import java.util.Scanner;
 

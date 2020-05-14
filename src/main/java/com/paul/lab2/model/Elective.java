@@ -1,4 +1,4 @@
-package com.paul.lab1.model;
+package com.paul.lab2.model;
 
 import java.util.Calendar;
 
@@ -61,8 +61,10 @@ public class Elective {
             }
         }
 
-        return electiveName + "," + teacherFullName + "," +
-                startDateStr + "," + endDateStr +
-                "," + studentsStr.toString();
+        return new String(
+                electiveName + "," + teacherFullName + "," +
+                        startDateStr + "," + endDateStr +
+                        "," +studentsStr.toString()
+        );
     }
 }

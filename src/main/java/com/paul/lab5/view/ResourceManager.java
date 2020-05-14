@@ -1,4 +1,4 @@
-package com.paul.lab1.view;
+package com.paul.lab5.view;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

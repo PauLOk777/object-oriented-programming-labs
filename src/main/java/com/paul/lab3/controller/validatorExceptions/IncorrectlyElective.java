@@ -1,4 +1,4 @@
-package com.paul.lab1.controller.validatorExceptions;
+package com.paul.lab3.controller.validatorExceptions;
 
 public class IncorrectlyElective extends RuntimeException {
     public IncorrectlyElective() {

@@ -150,3 +150,78 @@ If you want to exit from this app, write "quit".
 [DEBUG] 2020-05-14 11:25:04,471 RetrieveInfo - User input: quit
 [INFO ] 2020-05-14 11:25:04,471 Controller - User exit from application.
 [DEBUG] 2020-05-14 11:25:04,471 View - До свидания!
+[INFO ] 2020-05-14 15:51:56,441 View - User default locale: ru-RU
+[INFO ] 2020-05-14 15:51:56,485 Controller - Electives was defined successful.
+[DEBUG] 2020-05-14 15:51:56,486 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
+[DEBUG] 2020-05-14 15:52:02,927 RetrieveInfo - User input: 3
+[INFO ] 2020-05-14 15:52:02,929 View - User changed default locale to: uk-UA
+[DEBUG] 2020-05-14 15:52:02,929 View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG] 2020-05-14 15:52:04,929 RetrieveInfo - User input: 3
+[INFO ] 2020-05-14 15:52:04,929 Controller - User get all electives.
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Physics,Zaharko Mykola Mykolaevich,5/9/2019,1/4/2020,Filatov Oleksandr, Myronyuk Pavlo, Chugay Vladislava, Chuy Oleg, Sharikov Sergiy
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Math,Ivanov Ivan Ivanovich,1/8/2019,25/4/2020,Pavlyuk Olena, Knysh Vladislav, Sharikov Sergiy, Chugay Vladislava, Trotsiuk Pavlo
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Computer Science,Zaharko Mykola Mykolaevich,5/9/2019,25/4/2020,Kemarskiy Mykyta, Galun Anna, Panasyuk Vitaliy, Filatov Oleksandr, Verko Olga
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Chemistry,Ivanov Ivan Ivanovich,15/8/2019,5/5/2020,Verko Olga, Chuy Oleg, Pavlyuk Olena, Filatov Oleksandr, Trotsiuk Pavlo
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Biology,Guzenko Oleksandr Viktorovich,15/8/2019,5/5/2020,Myronyuk Pavlo, Panasyuk Vitaliy, Verko Olga, Sharikov Sergiy, Chugay Vladislava
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Ukrainian language,Soroka Evgen Sergiyovich,15/8/2019,5/5/2020,Kemarskiy Mykyta, Trotsiuk Pavlo, Knysh Vladislav, Verko Olga, Chugay Vladislava
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Ukrainian literature,Soroka Evgen Sergiyovich,1/8/2019,5/5/2020,Panasyuk Vitaliy, Sharikov Sergiy, Pavlyuk Olena, Knysh Vladislav, Galun Anna
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Ecology,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Krasnovil Oleg, Knysh Vladislav, Sharikov Sergiy, Kemarskiy Mykyta, Verko Olga
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Economy,Soroka Evgen Sergiyovich,5/9/2019,25/4/2020,Chugay Vladislava, Knysh Vladislav, Pavlyuk Olena, Kemarskiy Mykyta, Krasnovil Oleg
+[DEBUG] 2020-05-14 15:52:04,930 ElectiveService - Astronomy,Guzenko Oleksandr Viktorovich,1/8/2019,1/4/2020,Kemarskiy Mykyta, Sharikov Sergiy, Verko Olga, Myronyuk Pavlo, Pavlyuk Olena
+[DEBUG] 2020-05-14 15:52:04,934 View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG] 2020-05-14 15:52:09,930 RetrieveInfo - User input: 2
+[INFO ] 2020-05-14 15:52:09,930 Controller - User get invitation to write elective.
+[DEBUG] 2020-05-14 15:52:09,930 View - Напишіть назву факультативу. Для прикладу: "Ukrainian language".
+[DEBUG] 2020-05-14 15:52:15,934 RetrieveInfo - User input: Math
+[DEBUG] 2020-05-14 15:52:15,936 ElectiveService - Average mark in Math: 6.16
+[DEBUG] 2020-05-14 15:52:15,936 View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG] 2020-05-14 15:52:49,952 RetrieveInfo - User input: 5
+[ERROR] 2020-05-14 15:52:49,952 Controller - Bad query, please read instruction again and choose correct variant.
+
+[com.paul.lab5.controller.Validator.checkCorrectnessMainBranching(Validator.java:14), com.paul.lab5.controller.Controller.run(Controller.java:36), com.paul.lab5.Main.main(Main.java:7)]
+[DEBUG] 2020-05-14 15:52:49,952 View - Невірна опція! Спробуйте ще.
+[DEBUG] 2020-05-14 15:52:49,952 View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG] 2020-05-14 15:52:54,955 RetrieveInfo - User input: 1
+[INFO ] 2020-05-14 15:52:54,955 Controller - User get invitation to write teacher.
+[DEBUG] 2020-05-14 15:52:54,955 View - Напишіть повне ім'я вчителя. Для прикладу: "Ivanov Ivan Ivanovich".
+[DEBUG] 2020-05-14 15:52:56,956 RetrieveInfo - User input: 123
+[ERROR] 2020-05-14 15:52:56,956 Controller - Bad full name. Check instruction.
+[com.paul.lab5.controller.Validator.checkTeacher(Validator.java:20), com.paul.lab5.controller.Controller.invitationToWriteTeacher(Controller.java:97), com.paul.lab5.controller.Controller.run(Controller.java:40), com.paul.lab5.Main.main(Main.java:7)]
+[DEBUG] 2020-05-14 15:52:56,956 View - Невірний вчитель! Спробуйте ще.
+[DEBUG] 2020-05-14 15:52:56,956 View - Напишіть повне ім'я вчителя. Для прикладу: "Ivanov Ivan Ivanovich".
+[DEBUG] 2020-05-14 15:53:04,961 RetrieveInfo - User input: Ivanov Ivan Ivanovich
+[DEBUG] 2020-05-14 15:53:04,961 ElectiveService - 
+Math
+Chemistry
+
+[DEBUG] 2020-05-14 15:53:04,961 View - Щоб зберегти результат натисніть 1, пропустити - натисніть інші кнопки.
+[INFO ] 2020-05-14 15:53:04,961 Controller - User get invitation to save file.
+[DEBUG] 2020-05-14 15:53:07,962 RetrieveInfo - User input: 1
+[DEBUG] 2020-05-14 15:53:07,963 View - Файл збережено успішно.
+[DEBUG] 2020-05-14 15:53:07,964 View - Щоб вибрати опцію, напишіть номер опції та натисніть ентер:
+1. Отримати список всіх факультативів які веде заданий інструктор.
+2. Отримати середню оцінку всіх учнів по заданому факультативу.
+3. Отримати всі факультативи.
+Якщо ви хочете вийти з додатку, напишіть "quit".
+[DEBUG] 2020-05-14 15:53:11,964 RetrieveInfo - User input: quit
+[INFO ] 2020-05-14 15:53:11,964 Controller - User exit from application.
+[DEBUG] 2020-05-14 15:53:11,964 View - До побачення!

@@ -1,4 +1,4 @@
-package com.paul.lab1.model;
+package com.paul.lab2.model;
 
 public class ElectiveService {
     private Elective[] electives;

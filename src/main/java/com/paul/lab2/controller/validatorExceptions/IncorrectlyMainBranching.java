@@ -1,4 +1,4 @@
-package com.paul.lab1.controller.validatorExceptions;
+package com.paul.lab2.controller.validatorExceptions;
 
 public class IncorrectlyMainBranching extends RuntimeException {
     public IncorrectlyMainBranching() { super("Some problems with main branching."); }

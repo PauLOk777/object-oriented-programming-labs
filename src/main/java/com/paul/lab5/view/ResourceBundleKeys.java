@@ -1,4 +1,4 @@
-package com.paul.lab1.view;
+package com.paul.lab5.view;
 
 public final class ResourceBundleKeys {
     public static final String LANG_MENU = "lang_menu";
