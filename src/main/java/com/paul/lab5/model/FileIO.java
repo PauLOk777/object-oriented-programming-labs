@@ -7,7 +7,7 @@ import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-class FileIO {
+class   FileIO {
     static Elective[] readElectivesJSON(String filePath) throws IOException {
         Gson gson = new Gson();
         try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(filePath))) {
