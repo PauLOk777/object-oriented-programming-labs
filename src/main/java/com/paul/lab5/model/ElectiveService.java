@@ -7,10 +7,8 @@ import java.io.IOException;
 
 public class ElectiveService {
     private Elective[] electives;
-    private final static String PATH_TO_READ_ELECTIVES =
-            "C:\\projects\\object-oriented-programming-labs\\data.json";
-    private final static String PATH_TO_SAVE_ELECTIVES =
-            "C:\\projects\\object-oriented-programming-labs\\electives.txt";
+    private final static String PATH_TO_READ_ELECTIVES = "data.json";
+    private final static String PATH_TO_SAVE_ELECTIVES = "electives.txt";
     private static Logger logger = LogManager.getLogger();
 
     public ElectiveService() throws IOException {
@@ -63,7 +61,7 @@ public class ElectiveService {
         return result;
     }
 
-    public String getElectivesFromOneTeacher(String teacher) {
+        public String getElectivesFromOneTeacher(String teacher) {
         StringBuilder searchedElectives = new StringBuilder();
         for (Elective elective: electives) {
             if(elective.getTeacherFullName().equals(teacher)) {
