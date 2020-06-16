@@ -1,0 +1,6 @@
+[INFO ] 2020-06-04 08:35:54,396 View - User default locale: ru-RU
+[INFO ] 2020-06-04 08:35:54,568 Controller - Electives was defined successful.
+[DEBUG] 2020-06-04 08:35:54,570 View - Выберите свой язык (напишите номер опции):
+1. Английский (по умолчанию).
+2. Русский.
+3. Украинский.
