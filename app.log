@@ -4,3 +4,9 @@
 1. Английский (по умолчанию).
 2. Русский.
 3. Украинский.
+[INFO ] 2020-09-14 14:12:51,167 View - User default locale: en-US
+[INFO ] 2020-09-14 14:12:51,216 Controller - Electives was defined successful.
+[DEBUG] 2020-09-14 14:12:51,217 View - Change your language (type a number of option):
+1. English (default).
+2. Russian.
+3. Ukrainian language.

@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'com.paul.lab5.Main'
+mainClassName = 'com.paul.sem1.lab5.Main'
 group 'labs-gradle'
 version '1.0-SNAPSHOT'
 
