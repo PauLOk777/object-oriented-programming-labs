@@ -4,10 +4,9 @@ import com.paul.sem2.lab1.DirectoryAnalyser;
 
 import java.io.File;
 import java.util.List;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 
-public class JavaFileSearcher implements Callable<List<String>> {
+public class JavaFileSearcher implements Runnable {
     private File currentDirectory;
     private List<String> javaFiles;
     private ExecutorService executorService;
@@ -21,9 +20,12 @@ public class JavaFileSearcher implements Callable<List<String>> {
     }
 
     @Override
-    public List<String> call() {
+    public void run() {
         File[] files = currentDirectory.listFiles();
-        if (files == null) return javaFiles;
+        if (files == null) {
+            DirectoryAnalyser.vc.decrementAndNotifyIfZero();
+            return;
+        }
         for (File file: files) {
             String[] partOfName = file.getName().split("\\.");
             if (file.isDirectory()) {
@@ -33,7 +35,6 @@ public class JavaFileSearcher implements Callable<List<String>> {
                 executorService.submit(new JavaFileModifier(file));
             }
         }
-        DirectoryAnalyser.vc.decrement();
-        return javaFiles;
+        DirectoryAnalyser.vc.decrementAndNotifyIfZero();
     }
 }

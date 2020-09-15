@@ -20,7 +20,7 @@ public class JavaFileModifier implements Runnable {
         List<String> lines = getFile();
         modifyLines(lines);
         rewriteFile(lines);
-        DirectoryAnalyser.vc.decrement();
+        DirectoryAnalyser.vc.decrementAndNotifyIfZero();
     }
 
     private List<String> getFile() {

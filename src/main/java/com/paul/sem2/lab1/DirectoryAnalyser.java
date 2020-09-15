@@ -24,7 +24,7 @@ public class DirectoryAnalyser {
 
     public List<String> searchJavaFiles() {
         executorService.submit(new JavaFileSearcher(startDirectory, javaFiles, executorService));
-        while(!vc.compare(0));
+        vc.await();
         executorService.shutdown();
         return javaFiles;
     }
