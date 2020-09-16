@@ -30,6 +30,7 @@ public class VersatileCounter {
     }
 
     public synchronized void await() {
+        if (awaitStatus) throw new IllegalStateException();
         awaitStatus = true;
         try {
             wait();
