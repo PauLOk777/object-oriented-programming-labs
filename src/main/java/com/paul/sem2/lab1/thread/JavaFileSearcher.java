@@ -4,15 +4,16 @@ import com.paul.sem2.lab1.DirectoryAnalyser;
 
 import java.io.File;
 import java.util.List;
+import java.util.Queue;
 import java.util.concurrent.ExecutorService;
 
 public class JavaFileSearcher implements Runnable {
     private File currentDirectory;
-    private List<String> javaFiles;
+    private Queue<String> javaFiles;
     private ExecutorService executorService;
     public final static String EXPANSION = "java";
 
-    public JavaFileSearcher(File currentDirectory, List<String> javaFiles, ExecutorService executorService) {
+    public JavaFileSearcher(File currentDirectory, Queue<String> javaFiles, ExecutorService executorService) {
         DirectoryAnalyser.vc.increment();
         this.currentDirectory = currentDirectory;
         this.javaFiles = javaFiles;

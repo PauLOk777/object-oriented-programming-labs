@@ -2,6 +2,7 @@ package com.paul.sem2.lab1;
 
 import java.io.File;
 import java.util.List;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
@@ -18,7 +19,7 @@ public class Main {
         }
 
         DirectoryAnalyser dirAn = new DirectoryAnalyser(startFile);
-        List<String> javaFiles = dirAn.searchJavaFiles();
+        Queue<String> javaFiles = dirAn.searchJavaFiles();
         for (String javaFile: javaFiles) System.out.println(javaFile);
     }
 }
